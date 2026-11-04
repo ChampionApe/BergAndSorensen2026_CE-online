@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>O.6 The entry condition into treatment – The Environmental Macroeconomics of the Circular Economy</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./prop_markets_fee_sign.html" rel="next">
+<link href="./prop_longrun_select_b.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-26acbcf1308ed1f25f0c15c86df82a41.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-ec21bed48f8a3b8439e5656f195f4a7f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-26acbcf1308ed1f25f0c15c86df82a41.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script defer="" src="vendor/mathjax-3.2.2/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./prop_longrun_availability.html">Proofs</a></li><li class="breadcrumb-item"><a href="./prop_markets_entry.html"><span class="chapter-title">O.6 The entry condition into treatment</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">The Environmental Macroeconomics of the Circular Economy</a> 
+        <div class="sidebar-tools-main">
+    <a href="./explorer/web/index.html" title="Every figure" class="quarto-navigation-tool px-1" aria-label="Every figure"><i class="bi bi-bar-chart-line"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The online appendix</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Notation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Proofs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_longrun_availability.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.1 Which long-run states each cell makes available</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_longrun_availability_continued.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.1, continued: the workhorse’s balanced paths</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_longrun_closure.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.2 The closure criterion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./longrun_state_c.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.3 When state C is available: the tail condition and the workhorse’s path</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_longrun_select_a.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.4 Selection against collapse, and when a collapse path has a finite value</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_longrun_select_b.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.5 Selection against balanced dematerialization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_markets_entry.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">O.6 The entry condition into treatment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_markets_fee_sign.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.7 The sign of the gate fee without the emission tax</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_markets_ordering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.8 The planner’s entry margin against open access</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_markets_decentralisation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.9 The planner’s allocation as a competitive equilibrium</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_markets_discovery.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.10 The discovery tax and the retained endowment: an exact split with no sign</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./thm_markets_survival.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.11 A laissez-faire collapse where the planner survives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./thm_markets_survival_continued.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.11, continued: the planner’s side, a path with a finite value and an optimal path</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./longrun_lemmas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Shared lemmas: the first-order conditions, the pollution price and the material budget</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Robustness and figures</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./century.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The century fit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./taxonomy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The long-run taxonomy and the floor grid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./leakage.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Leakage against welfare</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./corners.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The sixteen corners</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./gatefee.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The gate-fee band</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./phases.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The phases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pairs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The preference pairs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./horizon.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The horizon</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./experiments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The observed-policy experiments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sensitivity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The sensitivities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_century.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The series behind the century fit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_extraction.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The extraction-cost index</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#the-statement" id="toc-the-statement" class="nav-link active" data-scroll-target="#the-statement">The statement</a></li>
+  <li><a href="#what-the-proof-uses" id="toc-what-the-proof-uses" class="nav-link" data-scroll-target="#what-the-proof-uses">What the proof uses</a></li>
+  <li><a href="#the-recovery-value" id="toc-the-recovery-value" class="nav-link" data-scroll-target="#the-recovery-value">The recovery value</a></li>
+  <li><a href="#the-waste-sectors-choice-at-a-date" id="toc-the-waste-sectors-choice-at-a-date" class="nav-link" data-scroll-target="#the-waste-sectors-choice-at-a-date">The waste sector’s choice at a date</a></li>
+  <li><a href="#proof-of-proposition-9" id="toc-proof-of-proposition-9" class="nav-link" data-scroll-target="#proof-of-proposition-9">Proof of Proposition 9</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./prop_longrun_availability.html">Proofs</a></li><li class="breadcrumb-item"><a href="./prop_markets_entry.html"><span class="chapter-title">O.6 The entry condition into treatment</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">O.6 The entry condition into treatment</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Proposition 9 of the paper (the entry condition into treatment) states when the waste sector treats the flow it handles, at any setting of the instruments and on a candidate planner path, and what open access, the owned stockpile and a rising material price make of that test. This page proves it in full. Symbols are the paper’s, as on the <a href="./notation.html">notation page</a>; a symbol the proof needs beyond them is defined where it is first used.</p>
+<section id="the-statement" class="level2">
+<h2 class="anchored" data-anchor-id="the-statement">The statement</h2>
+<p><strong>Proposition 9 (the entry condition into treatment).</strong> <em>General primitives. At any date with a positive handled flow, a positive rental and a positive handling wedge <span class="math inline">\(P^W&gt;0\)</span>, at any setting of the instruments and under either ownership regime:</em></p>
+<ol type="1">
+<li><em>the waste sector’s treated share is unique, and</em> <span class="math display">\[
+\varpi=0\quad\text{if and only if}\quad E\le0 ;
+\]</span> <em>when <span class="math inline">\(E&gt;0\)</span> it treats at the intensity <span class="math inline">\(x^*\)</span>, with <span class="math inline">\(K^R=x^*\varpi H\)</span>, and treats fully if and only if <span class="math inline">\(E\ge P^Wc^{T\prime}\!\left(1\right)\)</span>. A candidate planner path, one meeting the necessary conditions of Appendix A, has no treatment at a date if and only if <span class="math inline">\(E^{\mathrm{pl}}\le0\)</span>, where <span class="math inline">\(E^{\mathrm{pl}}\)</span> is <span class="math inline">\(E\)</span> at the planner’s prices, <span class="math inline">\(\tilde p=\mathcal G^K\)</span>, <span class="math inline">\(r^K=F_K\left(1-\zeta\Omega^Y\right)\)</span>, <span class="math inline">\(\tau^P=p^P\)</span> and <span class="math inline">\(P^W=1+\zeta\Omega^W\)</span>;</em></li>
+<li><em>under open access,</em> <span class="math display">\[
+E^{\mathrm{OA}} = \alpha\!\left(x^*\right)F_R-c^c,
+\qquad
+a'\!\left(x^*\right)F_R = F_K\ \text{if }a'\!\left(0^+\right)F_R&gt;F_K,\quad x^*=0\ \text{otherwise},
+\]</span> <em>so the open-access economy treats only if <span class="math inline">\(\bar aF_R&gt;c^c\)</span>; where it extracts, <span class="math inline">\(F_R=C^N_N+p^S\)</span>, the effort and the rent of the virgin tonne that a recovered tonne replaces;</em></li>
+<li><em>at the owned stockpile, at a common <span class="math inline">\(\left(F_R,F_K,\Omega\right)\)</span> and with the fee nonpositive, the intensity is open access’s and</em> <span class="math display">\[
+E^{\mathrm{OS}}-E^{\mathrm{OA}} = -\tau^W\left[\alpha\!\left(x^*\right)F_R\,\Omega^Y+c^c\,\Omega^W\right]\;\ge\;0 ,
+\]</span> <em>strictly whenever <span class="math inline">\(\tau^W&lt;0\)</span> and either <span class="math inline">\(\Omega^W&gt;0\)</span> or <span class="math inline">\(\Omega^Y&gt;0\)</span> with <span class="math inline">\(x^*&gt;0\)</span>;</em></li>
+<li><em>along an open-access path on which <span class="math inline">\(F_R\to\infty\)</span> and <span class="math inline">\(F_K/F_R\to0\)</span>, with the yield nondecreasing and the collection charge nonincreasing in time, the entry margin diverges: treatment and recycling capital enter at a finite date, and if the marginal treatment cost at full treatment is bounded across dates, treatment is full from a finite date.</em></li>
+</ol>
+<p>We take the simplest route for the paper’s assumptions. Every item holds for general primitives, with no functional form. Items 1 to 3 are statements about one date, and only the planner’s clause of item 1 uses first-order conditions. What the statement and the proof take from Sections 2 and 4 and from Appendix A of the paper is restated in <em>What the proof uses</em>.</p>
+</section>
+<section id="what-the-proof-uses" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-proof-uses">What the proof uses</h2>
+<p><strong>From Section 2 of the paper.</strong> Within a date we suppress the time argument and write <span class="math inline">\(a'\)</span> for <span class="math inline">\(a_x\)</span>. We read the yield as continuous on <span class="math inline">\(\left[0,\infty\right)\)</span> and twice differentiable on <span class="math inline">\(\left(0,\infty\right)\)</span>, as its derivatives presume. Then <span class="math inline">\(a'\)</span> is positive and strictly decreasing, and it tends to zero at infinity, since a limit <span class="math inline">\(\ell&gt;0\)</span> would make <span class="math inline">\(a\left(x\right)\ge a\left(1\right)+\ell\left(x-1\right)\)</span> unbounded; and <span class="math inline">\(a\)</span> rises strictly to <span class="math inline">\(\bar a\)</span>, so <span class="math inline">\(a\left(x\right)&lt;\bar a\)</span>. By the mean value theorem <span class="math inline">\(a\left(x\right)=a'\left(\xi\right)x\)</span> for some <span class="math inline">\(\xi\in\left(0,x\right)\)</span>. So <span class="math inline">\(a\left(x\right)&gt;a'\left(x\right)x\)</span>, and the slope of the yield at the origin, which Section 4.2 writes <span class="math inline">\(a'\!\left(0^+\right)\equiv\lim_{x\downarrow0}a\left(x\right)/x\)</span>, is also <span class="math inline">\(\lim_{x\downarrow0}a'\left(x\right)\)</span>, a limit in <span class="math inline">\(\left(0,\infty\right]\)</span> as <span class="math inline">\(a'\)</span> is positive and decreasing. The <em>marginal recycling yield</em> <span class="math inline">\(\alpha\left(x\right)\equiv a\left(x\right)-a'\left(x\right)x\)</span> therefore has <span class="math inline">\(0&lt;\alpha\left(x\right)\le a\left(x\right)\)</span> for <span class="math inline">\(x&gt;0\)</span>, and we set <span class="math inline">\(\alpha\left(0\right)\equiv0\)</span>. For a treated flow <span class="math inline">\(T&gt;0\)</span>, <span class="math inline">\(\mathcal R\left(T,xT\right)=a\left(x\right)T\)</span>, and with none nothing is recovered, <span class="math inline">\(\mathcal R\left(0,K^R\right)=0\)</span>, the only value consistent with <span class="math inline">\(0\le\mathcal R\le\bar aT\)</span>. The collection charge <span class="math inline">\(c^c\)</span> is positive; <span class="math inline">\(c^T\left(0\right)=c^{T\prime}\left(0\right)=0\)</span>, <span class="math inline">\(c^{T\prime}&gt;0\)</span> on <span class="math inline">\(\left(0,1\right]\)</span> and <span class="math inline">\(c^{T\prime\prime}&gt;0\)</span>, so <span class="math inline">\(c^{T\prime}\)</span> increases strictly on <span class="math inline">\(\left[0,1\right]\)</span> and <span class="math inline">\(c^T\left(\varpi\right)&gt;0\)</span> for <span class="math inline">\(\varpi&gt;0\)</span>; both charges are nonincreasing in time. <span class="math inline">\(\Omega^j=\Omega\omega^j\ge0\)</span>, since <span class="math inline">\(\omega^j\ge0\)</span> and <span class="math inline">\(\Omega\ge0\)</span> in Problem 1. Output vanishes below the floor, so <span class="math inline">\(F_K=F_R=0\)</span> where <span class="math inline">\(R&lt;\bar R\)</span>, while where <span class="math inline">\(R\ge\bar R\)</span>, <span class="math inline">\(F_K=\mathcal F_K&gt;0\)</span> and <span class="math inline">\(F_R=\mathcal F_{R^e}&gt;0\)</span>. Section 2.1 maintains, at the output function, “the Inada condition in capital, <span class="math inline">\(\mathcal F_K\to\infty\)</span> as <span class="math inline">\(K^Y\to0\)</span> at any <span class="math inline">\(R^e&gt;0\)</span>”.</p>
+<p><strong>From Section 4 of the paper.</strong> The <em>gate fee</em> <span class="math inline">\(\tau^W\)</span> is what a generator pays to hand over a tonne of waste, the <em>emission tax</em> <span class="math inline">\(\tau^P\)</span> is levied per tonne of <span class="math inline">\(\Xi\)</span> on its emitter, <span class="math inline">\(z\)</span> is the material-content price, and a unit of the final good put to the current use <span class="math inline">\(j\)</span> costs the <em>user price</em> <span class="math inline">\(P^j\equiv1+\left(z+\tau^W\right)\Omega^j\)</span> (Section 4.1). With <span class="math inline">\(p^R\)</span> the price of a tonne of raw material and <span class="math inline">\(r^K\)</span> the rental of capital, the final-goods sector’s first-order conditions are <span class="math inline">\(F_R\left[1-\left(z+\tau^W\right)\Omega^Y\right]=p^R-z\)</span> and <span class="math inline">\(F_K\left[1-\left(z+\tau^W\right)\Omega^Y\right]=r^K\)</span>, and where <span class="math inline">\(N&gt;0\)</span> the mining sector’s extraction condition is <span class="math inline">\(p^R=P^NC^N_N+\tau^P\Omega^{N,S}+p^S\)</span>, with <span class="math inline">\(p^S\)</span> the mine’s value of a tonne left in the ground. An idle date has <span class="math inline">\(Y=R=0\)</span> and a zero rental (Definition 2); at every other date the final-goods sector operates and its two conditions hold.</p>
+<p>The waste sector (Section 4.1) takes in the flow <span class="math inline">\(W_t\)</span> at the fee, draws <span class="math inline">\(H_t=\mu\mathcal W_t\)</span> from the waste stock, chooses the treated share <span class="math inline">\(\varpi_t\in\left[0,1\right]\)</span> and the recycling capital <span class="math inline">\(K^R_t\ge0\)</span>, rented at <span class="math inline">\(r^K_t\)</span>, sells <span class="math inline">\(R^R_t=\mathcal R\left(\varpi_tH_t,K^R_t\right)\)</span> at <span class="math inline">\(p^R_t\)</span>, buys the <span class="math inline">\(C^W_t=\left[c^c\varpi_t+c^T\left(\varpi_t\right)\right]H_t\)</span> units of the final good its handling uses at <span class="math inline">\(P^W_t\)</span>, and pays the emission tax on <span class="math inline">\(\Xi^h_t\)</span>; <span class="math inline">\(\tilde p\equiv p^R+d^W\tau^P\)</span> is its <em>value of a recovered tonne</em>. Where the stock is owned, the sector’s value <span class="math inline">\(J^W_t\)</span> “is the fee on what it accepts, plus its operating profit, plus the discounted value of the stock it carries into the next period” (Section 4.1): the largest value, over <span class="math inline">\(W_t\ge0\)</span> and the pair <span class="math inline">\(\left(\varpi_t,K^R_t\right)\)</span>, of its period cash flow plus <span class="math inline">\(J^W_{t+1}\left(\left(1-\mu\right)\mathcal W_t+W_t\right)/\left(1+r_{t+1}\right)\)</span>, with <span class="math inline">\(r\)</span> the market interest rate; <span class="math inline">\(J^W\)</span> is real-valued, the paper differentiating it to price the stock. Where nobody owns the stock, “since nobody values the stock, the waste sector chooses its treated share and recycling capital against its operating profit alone” (Section 4.2), a reason that holds whatever the instruments.</p>
+<p>Under <em>open access</em> (Section 4.2) nobody owns the stock and <span class="math inline">\(\tau^W=\tau^P=z=0\)</span>, so every user price is one and, where the final-goods sector operates, <span class="math inline">\(p^R=F_R\)</span> and <span class="math inline">\(r^K=F_K\)</span>. At the <em>owned stockpile</em> the stock is owned and <span class="math inline">\(\tau^P=z=0\)</span>, so <span class="math inline">\(P^W=1+\tau^W\Omega^W\)</span> and, where the final-goods sector operates, <span class="math inline">\(p^R=F_R\left(1-\tau^W\Omega^Y\right)\)</span> and <span class="math inline">\(r^K=F_K\left(1-\tau^W\Omega^Y\right)\)</span>. For <span class="math inline">\(r^K&gt;0\)</span> the <em>recovery value</em> of a treated tonne and the <em>entry margin</em> are (Section 4.2) <span class="math display">\[
+\mathcal G^{x}\!\left(\tilde p,r^K\right)\equiv\max_{x\ge0}\left[a\left(x\right)\tilde p-r^Kx\right],
+\qquad
+E\equiv\mathcal G^{x}\!\left(\tilde p,r^K\right)+\tau^P\left(1-d^W\right)-P^Wc^c ,
+\]</span> and <span class="math inline">\(E^{\mathrm{OA}}\)</span> and <span class="math inline">\(E^{\mathrm{OS}}\)</span> are <span class="math inline">\(E\)</span> under open access and at the owned stockpile; “at a common <span class="math inline">\(\left(F_R,F_K,\Omega\right)\)</span>” evaluates both at the same values of the three.</p>
+<p><strong>From Appendix A, through the shared page.</strong> The <a href="./longrun_lemmas.html">shared page of the long-run proofs</a> restates the prices of Appendix A and the Lagrangian of Problem 1. We take from it that <span class="math inline">\(\lambda_t&gt;0\)</span> on a candidate, by <a href="./longrun_lemmas.html#tag-c">(C)</a>; that the pair <span class="math inline">\(\left(\varpi,K^R\right)\)</span> enters the period-<span class="math inline">\(t\)</span> terms of the Lagrangian only as <span class="math inline">\(\beta^t\lambda_t\)</span> times the braces <span class="math inline">\(\left\{Y-C^W-p^WR+\zeta\left[R-\Omega\left(\mathcal D+\phi^IG\right)\right]-p^P\Xi\right\}\)</span>, whose derivatives where <span class="math inline">\(\varpi H&gt;0\)</span> are <span class="math inline">\(a'\mathcal G^K-\tilde F_K\)</span> in <span class="math inline">\(K^R\)</span> and <span class="math inline">\(H\left\{\mathcal G^\varpi-\left[c^c+c^{T\prime}\left(\varpi\right)\right]\left(1+\zeta\Omega^W\right)\right\}\)</span> in <span class="math inline">\(\varpi\)</span>; and the prices of <a href="./longrun_lemmas.html#tag-g">(G)</a>, <span class="math inline">\(\Psi\equiv F_R\left(1-\zeta\Omega^Y\right)+\zeta\)</span>, <span class="math inline">\(\mathcal G^K\equiv\Psi-p^W+d^Wp^P\)</span> and <span class="math inline">\(\mathcal G^\varpi=\alpha\mathcal G^K+\left(1-d^W\right)p^P\)</span>, with <span class="math inline">\(\tilde F_K\equiv F_K\left(1-\zeta\Omega^Y\right)\)</span>.</p>
+<p>Appendix A states the conditions on the pair, <a href="./longrun_lemmas.html#tag-kr">(KR)</a> and <a href="./longrun_lemmas.html#tag-t">(T)</a> where it is interior, as branch systems in which “each corner holds when its inequality goes the other way”; “<span class="math inline">\(F_R\)</span> is <span class="math inline">\(\mathcal F_{R^e}\)</span> at the prevailing <span class="math inline">\(R\ge\bar R\)</span>” and “the conditions are evaluated on operating periods”. It notes that “The upper bound <span class="math inline">\(K^R\le K\)</span> never binds, since <span class="math inline">\(F_K\to\infty\)</span> as <span class="math inline">\(K^Y\to0\)</span>”, the reason being Section 2.1’s Inada condition in capital, <span class="math inline">\(\mathcal F_K\to\infty\)</span> as <span class="math inline">\(K^Y\to0\)</span> at any <span class="math inline">\(R^e&gt;0\)</span>, and adds: “At <span class="math inline">\(\varpi=0\)</span> the ratio <span class="math inline">\(x=K^R/\left(\varpi H\right)\)</span> is undefined, so entry into treatment and into recycling capital is one joint decision, tested over the best available pair <span class="math inline">\(\left(\varpi,x\right)\)</span>.” We read these first-order conditions as one <strong>requirement on the pair</strong>: at the candidate’s pair, with every other control and every multiplier held at the candidate’s values, the one-sided derivative of the braces is nonpositive in every direction <span class="math inline">\(\left(d\varpi,dK^R\right)\)</span> along which the pair stays in <span class="math inline">\(\left[0,1\right]\times\left[0,K_t\right]\)</span> for small steps, <span class="math inline">\(\mathcal F\)</span> being differentiable at the date’s input, as the shared page’s derivatives presume. Where the pair is interior this is (KR) and (T), at a bound the inequality of its branch, and at <span class="math inline">\(\varpi=0\)</span> the joint test.</p>
+</section>
+<section id="the-recovery-value" class="level2">
+<h2 class="anchored" data-anchor-id="the-recovery-value">The recovery value</h2>
+<p><span id="lemma-r"><strong>Lemma R.</strong></span> <em>Let <span class="math inline">\(r&gt;0\)</span> and <span class="math inline">\(\tilde p\)</span> be real. The maximum of <span class="math inline">\(f\left(x\right)\equiv a\left(x\right)\tilde p-rx\)</span> over <span class="math inline">\(x\ge0\)</span> is attained at exactly one point <span class="math inline">\(x^*\left(\tilde p,r\right)\)</span>: <span class="math inline">\(x^*&gt;0\)</span> with <span class="math inline">\(a'\left(x^*\right)\tilde p=r\)</span> if <span class="math inline">\(\tilde p&gt;0\)</span> and <span class="math inline">\(a'\!\left(0^+\right)\tilde p&gt;r\)</span>, and <span class="math inline">\(x^*=0\)</span> otherwise. Its value is <span class="math inline">\(\mathcal G^x\left(\tilde p,r\right)=\alpha\left(x^*\right)\tilde p\)</span>, and:</em></p>
+<p><em>(a) <span class="math inline">\(\mathcal G^x\ge0\)</span>, with <span class="math inline">\(\mathcal G^x&gt;0\)</span> if and only if <span class="math inline">\(x^*&gt;0\)</span>;</em></p>
+<p><em>(b) <span class="math inline">\(\mathcal G^x&lt;\bar a\tilde p\)</span> if <span class="math inline">\(\tilde p&gt;0\)</span>;</em></p>
+<p><em>(c) for <span class="math inline">\(s&gt;0\)</span>, <span class="math inline">\(x^*\left(s\tilde p,sr\right)=x^*\left(\tilde p,r\right)\)</span> and <span class="math inline">\(\mathcal G^x\left(s\tilde p,sr\right)=s\,\mathcal G^x\left(\tilde p,r\right)\)</span>.</em></p>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><span class="math inline">\(f\)</span> is continuous on <span class="math inline">\(\left[0,\infty\right)\)</span> with <span class="math inline">\(f\left(0\right)=0\)</span>. If <span class="math inline">\(\tilde p\le0\)</span>, <span class="math inline">\(a\tilde p\)</span> is nonincreasing and <span class="math inline">\(-rx\)</span> strictly decreasing, so <span class="math inline">\(f\)</span> falls strictly and <span class="math inline">\(x^*=0\)</span>. If <span class="math inline">\(\tilde p&gt;0\)</span>, <span class="math inline">\(f'\left(x\right)=a'\left(x\right)\tilde p-r\)</span> is continuous and strictly decreasing on <span class="math inline">\(\left(0,\infty\right)\)</span>, with limit <span class="math inline">\(a'\!\left(0^+\right)\tilde p-r\)</span> at the origin and <span class="math inline">\(-r&lt;0\)</span> at infinity. If <span class="math inline">\(a'\!\left(0^+\right)\tilde p&gt;r\)</span>, exactly one <span class="math inline">\(x^*&gt;0\)</span> has <span class="math inline">\(f'\left(x^*\right)=0\)</span>, and <span class="math inline">\(f\)</span> rises strictly on <span class="math inline">\(\left[0,x^*\right]\)</span> and falls strictly on <span class="math inline">\(\left[x^*,\infty\right)\)</span>; otherwise <span class="math inline">\(f'&lt;0\)</span> on <span class="math inline">\(\left(0,\infty\right)\)</span> and <span class="math inline">\(f\)</span> falls strictly from <span class="math inline">\(x=0\)</span>. Either way the maximiser is unique. At an interior <span class="math inline">\(x^*\)</span>, <span class="math inline">\(r=a'\left(x^*\right)\tilde p\)</span> gives <span class="math inline">\(f\left(x^*\right)=\left[a\left(x^*\right)-a'\left(x^*\right)x^*\right]\tilde p=\alpha\left(x^*\right)\tilde p\)</span>; at <span class="math inline">\(x^*=0\)</span> both sides are zero.</p>
+<ol type="a">
+<li><span class="math inline">\(\mathcal G^x\ge f\left(0\right)=0\)</span>. If <span class="math inline">\(x^*&gt;0\)</span>, then <span class="math inline">\(\tilde p&gt;0\)</span> and <span class="math inline">\(\alpha\left(x^*\right)&gt;0\)</span>, so <span class="math inline">\(\mathcal G^x&gt;0\)</span>; if <span class="math inline">\(x^*=0\)</span>, <span class="math inline">\(\mathcal G^x=0\)</span>. (b) <span class="math inline">\(\alpha\left(x^*\right)\le a\left(x^*\right)&lt;\bar a\)</span>. (c) <span class="math inline">\(f\)</span> at <span class="math inline">\(\left(s\tilde p,sr\right)\)</span> is <span class="math inline">\(s\)</span> times <span class="math inline">\(f\)</span> at <span class="math inline">\(\left(\tilde p,r\right)\)</span>, so it has the same maximiser and <span class="math inline">\(s\)</span> times the maximum.</li>
+</ol>
+</div>
+</section>
+<section id="the-waste-sectors-choice-at-a-date" class="level2">
+<h2 class="anchored" data-anchor-id="the-waste-sectors-choice-at-a-date">The waste sector’s choice at a date</h2>
+<p><span id="lemma-h"><strong>Lemma H.</strong></span> <em>Take a date with <span class="math inline">\(H&gt;0\)</span>, <span class="math inline">\(r^K&gt;0\)</span> and <span class="math inline">\(P^W&gt;0\)</span>, any setting of the instruments and either ownership regime.</em></p>
+<p><em>(a) The waste sector’s pair maximises over <span class="math inline">\(\left[0,1\right]\times\left[0,\infty\right)\)</span> its</em> operating profit<em>, the part of its period cash flow that the pair moves,</em> <span class="math display">\[
+\Pi^W\!\left(\varpi,K^R\right)\equiv\tilde p\,\mathcal R\left(\varpi H,K^R\right)+\tau^P\left(1-d^W\right)\varpi H-P^W\left[c^c\varpi+c^T\!\left(\varpi\right)\right]H-r^KK^R-\tau^PH .
+\]</span></p>
+<p><em>(b) This problem has exactly one solution, <span class="math inline">\(\left(\varpi^*,\varpi^*x^*H\right)\)</span>, with <span class="math inline">\(x^*=x^*\left(\tilde p,r^K\right)\)</span> of <a href="#lemma-r">Lemma R</a> and <span class="math inline">\(\varpi^*\)</span> the unique maximiser over <span class="math inline">\(\left[0,1\right]\)</span> of <span class="math inline">\(\hat\pi\left(\varpi\right)\equiv\varpi E-P^Wc^T\!\left(\varpi\right)-\tau^P\)</span>.</em></p>
+<p><em>(c) <span class="math inline">\(\varpi^*=0\)</span> if and only if <span class="math inline">\(E\le0\)</span>, and <span class="math inline">\(\varpi^*=1\)</span> if and only if <span class="math inline">\(E\ge P^Wc^{T\prime}\!\left(1\right)\)</span>.</em></p>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span></p>
+<ol type="a">
+<li><p>The period cash flow is <span class="math inline">\(\tau^WW+p^RR^R-P^WC^W-r^KK^R-\tau^P\Xi^h\)</span>. With <span class="math inline">\(\Xi^h=\left[1-\varpi+d^W\varpi\left(1-a\right)\right]H=\left(1-\varpi+d^W\varpi\right)H-d^WR^R\)</span> it is <span class="math inline">\(\tau^WW+\Pi^W\left(\varpi,K^R\right)\)</span>. Where the stock is owned, the sector’s choice at date <span class="math inline">\(t\)</span> maximises <span class="math inline">\(\Pi^W\left(\varpi,K^R\right)+\tau^W_tW_t+J^W_{t+1}\left(\left(1-\mu\right)\mathcal W_t+W_t\right)/\left(1+r_{t+1}\right)\)</span>. The handled flow is fixed when the period opens and the pair is not in the transition, so the pair enters only through <span class="math inline">\(\Pi^W\)</span>; at a solution the other two terms are a real number, and a pair with a larger <span class="math inline">\(\Pi^W\)</span>, <span class="math inline">\(W_t\)</span> kept, would raise the value. Where nobody owns the stock, the sector chooses the pair against <span class="math inline">\(\Pi^W\)</span> alone.</p></li>
+<li><p>Fix <span class="math inline">\(\varpi\in\left(0,1\right]\)</span>. As <span class="math inline">\(\varpi H&gt;0\)</span>, <span class="math inline">\(K^R=x\varpi H\)</span> maps <span class="math inline">\(x\ge0\)</span> one to one onto <span class="math inline">\(K^R\ge0\)</span>, and <span class="math inline">\(\mathcal R\left(\varpi H,x\varpi H\right)=a\left(x\right)\varpi H\)</span>, so <span class="math display">\[
+\Pi^W\!\left(\varpi,x\varpi H\right)=\varpi H\left[a\left(x\right)\tilde p-r^Kx\right]+\tau^P\left(1-d^W\right)\varpi H-P^W\left[c^c\varpi+c^T\!\left(\varpi\right)\right]H-\tau^PH ,
+\]</span> which by Lemma R is largest exactly at <span class="math inline">\(x=x^*\)</span>, with value <span class="math inline">\(H\hat\pi\left(\varpi\right)\)</span>. At <span class="math inline">\(\varpi=0\)</span> nothing is recovered and <span class="math inline">\(\Pi^W\left(0,K^R\right)=-r^KK^R-\tau^PH\)</span>, largest exactly at <span class="math inline">\(K^R=0\)</span>, with value <span class="math inline">\(H\hat\pi\left(0\right)\)</span>. So for every <span class="math inline">\(\varpi\)</span> the largest <span class="math inline">\(\Pi^W\)</span> is <span class="math inline">\(H\hat\pi\left(\varpi\right)\)</span>, attained only at <span class="math inline">\(K^R=\varpi x^*H\)</span>. As <span class="math inline">\(P^W&gt;0\)</span> and <span class="math inline">\(c^T\)</span> is strictly convex, <span class="math inline">\(\hat\pi\)</span> is continuous and strictly concave, with a unique maximiser <span class="math inline">\(\varpi^*\)</span> on <span class="math inline">\(\left[0,1\right]\)</span>. Every pair has <span class="math inline">\(\Pi^W\left(\varpi,K^R\right)\le H\hat\pi\left(\varpi\right)\le H\hat\pi\left(\varpi^*\right)=\Pi^W\left(\varpi^*,\varpi^*x^*H\right)\)</span>, and as <span class="math inline">\(H&gt;0\)</span> one of the two inequalities is strict unless <span class="math inline">\(\varpi=\varpi^*\)</span> and <span class="math inline">\(K^R=\varpi^*x^*H\)</span>.</p></li>
+<li><p><span class="math inline">\(\hat\pi\left(\varpi\right)-\hat\pi\left(0\right)=\varpi E-P^Wc^T\!\left(\varpi\right)\)</span>. If <span class="math inline">\(E\le0\)</span> it is negative for <span class="math inline">\(\varpi&gt;0\)</span>, as <span class="math inline">\(c^T\left(\varpi\right)&gt;0\)</span>, so <span class="math inline">\(\varpi^*=0\)</span>. If <span class="math inline">\(E&gt;0\)</span> it equals <span class="math inline">\(\varpi\left[E-P^Wc^T\!\left(\varpi\right)/\varpi\right]\)</span>, positive for small <span class="math inline">\(\varpi&gt;0\)</span> since <span class="math inline">\(c^T\!\left(\varpi\right)/\varpi\to c^{T\prime}\!\left(0\right)=0\)</span>, so <span class="math inline">\(\varpi^*&gt;0\)</span>. On <span class="math inline">\(\left(0,1\right]\)</span> the derivative of <span class="math inline">\(\hat\pi\)</span>, <span class="math inline">\(E-P^Wc^{T\prime}\!\left(\varpi\right)\)</span>, falls strictly. If <span class="math inline">\(E\ge P^Wc^{T\prime}\!\left(1\right)\)</span> it is positive on <span class="math inline">\(\left(0,1\right)\)</span>, <span class="math inline">\(\hat\pi\)</span> rises strictly on <span class="math inline">\(\left[0,1\right]\)</span> and <span class="math inline">\(\varpi^*=1\)</span>; if <span class="math inline">\(E&lt;P^Wc^{T\prime}\!\left(1\right)\)</span> it is negative at <span class="math inline">\(\varpi=1\)</span>, so some <span class="math inline">\(\varpi&lt;1\)</span> does better than <span class="math inline">\(1\)</span>.</p></li>
+</ol>
+</div>
+</section>
+<section id="proof-of-proposition-9" class="level2">
+<h2 class="anchored" data-anchor-id="proof-of-proposition-9">Proof of Proposition 9</h2>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Item 1, the waste sector.</em> By <a href="#lemma-h">Lemma H</a>, whenever the sector solves its problem its pair is <span class="math inline">\(\left(\varpi^*,\varpi^*x^*H\right)\)</span>: the treated share is unique, <span class="math inline">\(\varpi=0\)</span> exactly when <span class="math inline">\(E\le0\)</span>, and <span class="math inline">\(\varpi=1\)</span> exactly when <span class="math inline">\(E\ge P^Wc^{T\prime}\!\left(1\right)\)</span>. When <span class="math inline">\(E&gt;0\)</span>, <span class="math inline">\(\varpi&gt;0\)</span> and <span class="math inline">\(K^R=x^*\varpi H\)</span>, so the intensity <span class="math inline">\(K^R/\left(\varpi H\right)\)</span> is <span class="math inline">\(x^*\)</span>.</p>
+<p><em>Item 1, a candidate planner path.</em> Take a candidate and a date <span class="math inline">\(t\)</span> with <span class="math inline">\(H_t&gt;0\)</span>, <span class="math inline">\(\tilde F_{K,t}&gt;0\)</span> and <span class="math inline">\(1+\zeta_t\Omega^W_t&gt;0\)</span>. As <span class="math inline">\(F_K\ne0\)</span>, <span class="math inline">\(R_t\ge\bar R\)</span>. And <span class="math inline">\(K^Y_t&gt;0\)</span>, so <span class="math inline">\(K^R_t&lt;K_t\)</span>, as Appendix A’s sentence on the upper bound states; Section 2.1’s Inada clause is its reason, <span class="math inline">\(\tilde F_{K,t}\)</span> being a real number while <span class="math inline">\(\mathcal F_K\to\infty\)</span> as <span class="math inline">\(K^Y\to0\)</span> at any <span class="math inline">\(R^e&gt;0\)</span>. By Lemma R at <span class="math inline">\(\left(\mathcal G^K_t,\tilde F_{K,t}\right)\)</span>, <span class="math inline">\(E^{\mathrm{pl}}_t=\max_{x\ge0}\Upsilon_t\left(x\right)\)</span>, with <span class="math display">\[
+\Upsilon_t\left(x\right)\equiv a\left(x\right)\mathcal G^K_t-x\tilde F_{K,t}+\left(1-d^W\right)p^P_t-\left(1+\zeta_t\Omega^W_t\right)c^c .
+\]</span></p>
+<p><em>No treatment implies <span class="math inline">\(E^{\mathrm{pl}}_t\le0\)</span>.</em> Let <span class="math inline">\(\varpi_t=0\)</span>. Then <span class="math inline">\(K^R_t=0\)</span>: with no treated flow nothing is recovered, so <span class="math inline">\(K^R\)</span> moves the braces only through <span class="math inline">\(Y=F\left(K-K^R,R,P,t\right)\)</span>, directly and in <span class="math inline">\(\mathcal D\)</span>, at the rate <span class="math inline">\(-\tilde F_{K,t}&lt;0\)</span>, and lowering a positive <span class="math inline">\(K^R_t\)</span> would raise them, against the requirement. At the corner <span class="math inline">\(\left(0,0\right)\)</span>, <span class="math inline">\(K_t=K^Y_t&gt;0\)</span>, so for every <span class="math inline">\(x\ge0\)</span> the direction <span class="math inline">\(\left(1,xH_t\right)\)</span> is feasible, and every feasible direction with <span class="math inline">\(d\varpi&gt;0\)</span> is a positive multiple of one of them. Along <span class="math inline">\(\left(\varpi,K^R\right)=\left(\epsilon,\epsilon xH_t\right)\)</span>, <span class="math inline">\(\epsilon\downarrow0\)</span>, the treated flow <span class="math inline">\(\epsilon H_t\)</span> is positive, so <span class="math inline">\(R^R=\epsilon a\left(x\right)H_t\)</span>, <span class="math inline">\(R=N_t+R^R\ge\bar R\)</span>, <span class="math inline">\(K^Y=K_t-\epsilon xH_t\)</span>, <span class="math inline">\(C^W=\left[c^c\epsilon+c^T\left(\epsilon\right)\right]H_t\)</span> and <span class="math inline">\(\Xi^h=\left[1-\left(1-d^W\right)\epsilon-d^Wa\left(x\right)\epsilon\right]H_t\)</span>; up to terms the pair does not move, the braces are <span class="math inline">\(\left(1-\zeta\Omega^Y\right)Y-\left(1+\zeta\Omega^W\right)C^W+\left(\zeta-p^W\right)R-p^P\Xi^h\)</span>. Their derivative at <span class="math inline">\(\epsilon=0^+\)</span> is, with <span class="math inline">\(c^{T\prime}\left(0\right)=0\)</span> and (G), <span class="math display">\[
+H_t\Big\{a\left(x\right)\left[F_R\left(1-\zeta\Omega^Y\right)+\zeta-p^W+d^Wp^P\right]-xF_K\left(1-\zeta\Omega^Y\right)+\left(1-d^W\right)p^P-\left(1+\zeta\Omega^W\right)c^c\Big\}\Big|_t=H_t\,\Upsilon_t\left(x\right).
+\]</span> The requirement on the pair makes it nonpositive for every <span class="math inline">\(x\ge0\)</span>, so <span class="math inline">\(E^{\mathrm{pl}}_t\le0\)</span>.</p>
+<p><em><span class="math inline">\(E^{\mathrm{pl}}_t\le0\)</span> implies no treatment.</em> Suppose <span class="math inline">\(\varpi_t&gt;0\)</span>, and let <span class="math inline">\(x_t\equiv K^R_t/\left(\varpi_tH_t\right)\)</span>. Lowering <span class="math inline">\(\varpi\)</span> is feasible, and with the shared page’s derivative in <span class="math inline">\(\varpi\)</span> the requirement gives (T), or its corner at <span class="math inline">\(\varpi_t=1\)</span>, as <span class="math inline">\(\mathcal G^\varpi_t\ge\left(1+\zeta_t\Omega^W_t\right)\left[c^c+c^{T\prime}\left(\varpi_t\right)\right]\)</span>. If <span class="math inline">\(K^R_t&gt;0\)</span>, lowering <span class="math inline">\(K^R\)</span> is feasible and gives <span class="math inline">\(a'\left(x_t\right)\mathcal G^K_t\ge\tilde F_{K,t}\)</span>, so <span class="math inline">\(\alpha\left(x_t\right)\mathcal G^K_t\le a\left(x_t\right)\mathcal G^K_t-x_t\tilde F_{K,t}\)</span>; if <span class="math inline">\(K^R_t=0\)</span>, <span class="math inline">\(\alpha\left(x_t\right)=0\)</span>. Either way <span class="math inline">\(\alpha\left(x_t\right)\mathcal G^K_t\le\mathcal G^x\left(\mathcal G^K_t,\tilde F_{K,t}\right)\)</span>, by the definition of the maximum and Lemma R(a), and with (G) <span class="math display">\[
+E^{\mathrm{pl}}_t\;\ge\;\mathcal G^\varpi_t-\left(1+\zeta_t\Omega^W_t\right)c^c\;\ge\;\left(1+\zeta_t\Omega^W_t\right)c^{T\prime}\!\left(\varpi_t\right)\;&gt;\;0 ,
+\]</span> since <span class="math inline">\(c^{T\prime}&gt;0\)</span> on <span class="math inline">\(\left(0,1\right]\)</span>, against <span class="math inline">\(E^{\mathrm{pl}}_t\le0\)</span>.</p>
+<p><em>Item 2.</em> Under open access, at a date with a positive rental the final-goods sector operates, so <span class="math inline">\(\tilde p=p^R=F_R\)</span>, <span class="math inline">\(r^K=F_K&gt;0\)</span>, <span class="math inline">\(\tau^P=0\)</span> and <span class="math inline">\(P^W=1\)</span>; then <span class="math inline">\(R\ge\bar R\)</span>, as <span class="math inline">\(F_K=0\)</span> below the floor, and <span class="math inline">\(F_R&gt;0\)</span>. Lemma R gives <span class="math inline">\(E^{\mathrm{OA}}=\mathcal G^x\left(F_R,F_K\right)-c^c=\alpha\left(x^*\right)F_R-c^c\)</span>, with <span class="math inline">\(x^*\)</span> interior and <span class="math inline">\(a'\left(x^*\right)F_R=F_K\)</span> exactly when <span class="math inline">\(a'\!\left(0^+\right)F_R&gt;F_K\)</span>. By item 1 the economy treats only if <span class="math inline">\(E^{\mathrm{OA}}&gt;0\)</span>, and by Lemma R(b) <span class="math inline">\(E^{\mathrm{OA}}&lt;\bar aF_R-c^c\)</span>, so it treats only if <span class="math inline">\(\bar aF_R&gt;c^c\)</span>. Where it extracts, the extraction condition with <span class="math inline">\(P^N=1\)</span>, <span class="math inline">\(\tau^P=0\)</span> and <span class="math inline">\(p^R=F_R\)</span> reads <span class="math inline">\(F_R=C^N_N+p^S\)</span>.</p>
+<p><em>Item 3.</em> At a date with a positive rental the final-goods sector operates, and at the owned stockpile <span class="math inline">\(\tau^P=z=0\)</span>, so <span class="math inline">\(\tilde p=p^R=sF_R\)</span> and <span class="math inline">\(r^K=sF_K\)</span>, with <span class="math inline">\(s\equiv1-\tau^W\Omega^Y\ge1\)</span> as the fee is nonpositive, and <span class="math inline">\(P^W=1+\tau^W\Omega^W\)</span>. The positive rental gives <span class="math inline">\(F_K&gt;0\)</span>, so <span class="math inline">\(R\ge\bar R\)</span> and <span class="math inline">\(F_R&gt;0\)</span>. By Lemma R(c) the intensity <span class="math inline">\(x^*\left(sF_R,sF_K\right)\)</span> is open access’s <span class="math inline">\(x^*\left(F_R,F_K\right)\)</span> and <span class="math inline">\(\mathcal G^x\left(sF_R,sF_K\right)=s\,\alpha\left(x^*\right)F_R\)</span>, so <span class="math inline">\(E^{\mathrm{OS}}=s\,\alpha\left(x^*\right)F_R-\left(1+\tau^W\Omega^W\right)c^c\)</span>. Subtracting <span class="math inline">\(E^{\mathrm{OA}}=\alpha\left(x^*\right)F_R-c^c\)</span> at the same <span class="math inline">\(\left(F_R,F_K,\Omega\right)\)</span> gives the identity. Each of <span class="math inline">\(-\tau^W\)</span>, <span class="math inline">\(\alpha\left(x^*\right)\)</span>, <span class="math inline">\(F_R\)</span>, <span class="math inline">\(\Omega^Y\)</span>, <span class="math inline">\(\Omega^W\)</span> and <span class="math inline">\(c^c\)</span> is nonnegative, and so is the difference. It is positive when <span class="math inline">\(\tau^W&lt;0\)</span> and the bracket is positive, that is when <span class="math inline">\(\Omega^W&gt;0\)</span>, as <span class="math inline">\(c^c&gt;0\)</span>, or when <span class="math inline">\(\Omega^Y&gt;0\)</span> and <span class="math inline">\(\alpha\left(x^*\right)&gt;0\)</span>, which by Lemma R(a) holds exactly when <span class="math inline">\(x^*&gt;0\)</span>.</p>
+<p><em>Item 4.</em> Of an open-access path we use only that at every date the waste sector chooses its pair against its operating profit at open access’s prices. The proposition speaks of dates with a positive rental, at which the final-goods sector operates, so <span class="math inline">\(\tilde p=F_{R,t}\)</span>, <span class="math inline">\(r^K=F_{K,t}&gt;0\)</span>, <span class="math inline">\(\tau^P=0\)</span> and <span class="math inline">\(P^W=1\)</span>. As <span class="math inline">\(F_{R,t}\to\infty\)</span>, <span class="math inline">\(F_{R,t}&gt;0\)</span> from some date on, and when <span class="math inline">\(\bar R&gt;0\)</span> every such date has a positive rental: there <span class="math inline">\(R_t\ge\bar R&gt;0\)</span>, so the date is not idle and <span class="math inline">\(r^K=F_{K,t}&gt;0\)</span>. At a date with a positive rental and <span class="math inline">\(F_{R,t}&gt;0\)</span>, and for any <span class="math inline">\(\bar x&gt;0\)</span>, the definition of the maximum, a yield nondecreasing and a collection charge nonincreasing in time give <span class="math display">\[
+E^{\mathrm{OA}}_t\;\ge\;a\left(\bar x,t\right)F_{R,t}-\bar xF_{K,t}-c^c\left(t\right)\;\ge\;F_{R,t}\left[a\left(\bar x,0\right)-\bar x\,\frac{F_{K,t}}{F_{R,t}}\right]-c^c\left(0\right) .
+\]</span> The bracket tends to <span class="math inline">\(a\left(\bar x,0\right)&gt;0\)</span> and <span class="math inline">\(F_{R,t}\)</span> diverges, so <span class="math inline">\(E^{\mathrm{OA}}_t\to+\infty\)</span> along the dates with a positive rental, and there is a date <span class="math inline">\(T_e\)</span> after which <span class="math inline">\(E^{\mathrm{OA}}_t&gt;0\)</span> at each of them. At such a date with <span class="math inline">\(H_t&gt;0\)</span>, item 1 gives <span class="math inline">\(\varpi_t&gt;0\)</span>; as <span class="math inline">\(\tau^P=0\)</span>, <span class="math inline">\(\mathcal G^x=E^{\mathrm{OA}}_t+c^c\left(t\right)&gt;0\)</span>, so <span class="math inline">\(x^*&gt;0\)</span> by Lemma R(a) and <span class="math inline">\(K^R_t=x^*\varpi_tH_t&gt;0\)</span>. With <span class="math inline">\(W_t\ge0\)</span> and <span class="math inline">\(\mu&lt;1\)</span>, <span class="math inline">\(\mathcal W_{t+1}\ge\left(1-\mu\right)\mathcal W_t\)</span>, so a positive waste stock stays positive, and from the later of <span class="math inline">\(T_e\)</span> and the first date at which the stock is positive the sector treats and rents recycling capital at every date with a positive rental. The marginal treatment cost at full treatment is <span class="math inline">\(P^Wc^{T\prime}\left(1,t\right)=c^{T\prime}\left(1,t\right)\)</span>; adding the collection charge, which lies in <span class="math inline">\(\left(0,c^c\left(0\right)\right]\)</span>, does not change whether it is bounded. If <span class="math inline">\(c^{T\prime}\left(1,t\right)\le\bar c\)</span> at every date, there is a date <span class="math inline">\(T'_e\)</span> after which <span class="math inline">\(E^{\mathrm{OA}}_t\ge\bar c\)</span> at each date with a positive rental, and item 1 gives <span class="math inline">\(\varpi_t=1\)</span> at each such date with <span class="math inline">\(H_t&gt;0\)</span>.</p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+/* The figures embedded in a page: each is the explorer (explorer/web/) in an iframe. The page
+ * tells it the theme, at load and on every toggle, and it tells the page its height. Only a
+ * number and two words cross; nothing else is accepted. */
+(function () {
+  "use strict";
+  var frames = [];
+  function theme() { return document.body.classList.contains("quarto-dark") ? "dark" : "light"; }
+  function send(f) { if (f.contentWindow) f.contentWindow.postMessage({ oxTheme: theme() }, "*"); }
+  function start() {
+    frames = Array.prototype.slice.call(document.querySelectorAll("iframe.ox-frame[data-src]"));
+    frames.forEach(function (f) {
+      var src = f.getAttribute("data-src");
+      f.addEventListener("load", function () { send(f); });
+      f.src = src + (src.indexOf("?") >= 0 ? "&" : "?") + "theme=" + theme();
+    });
+    if (frames.length) {
+      new MutationObserver(function () { frames.forEach(send); })
+        .observe(document.body, { attributes: true, attributeFilter: ["class"] });
+    }
+  }
+  window.addEventListener("message", function (e) {
+    var h = e.data && typeof e.data === "object" ? e.data.oxHeight : null;
+    if (typeof h !== "number" || !isFinite(h) || h <= 0 || h > 20000) return;
+    frames.forEach(function (f) { if (f.contentWindow === e.source) f.style.height = Math.ceil(h) + "px"; });
+  });
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./prop_longrun_select_b.html" class="pagination-link" aria-label="O.5 Selection against balanced dematerialization">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">O.5 Selection against balanced dematerialization</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./prop_markets_fee_sign.html" class="pagination-link" aria-label="O.7 The sign of the gate fee without the emission tax">
+        <span class="nav-page-text"><span class="chapter-title">O.7 The sign of the gate fee without the emission tax</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

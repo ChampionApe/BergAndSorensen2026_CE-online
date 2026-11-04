@@ -1,0 +1,128 @@
+/* The figures' look: the chrome and the categorical slots of the dataviz method's reference
+ * palette, light and dark each selected and validated (slots 1 to 4 adjacent, slots 1 to 3
+ * all pairs). Figures read every colour from these tokens; text is ink, never a series colour.
+ * The dark values are declared twice: under the OS setting and under data-theme, which the
+ * page around an embedded figure sets, so that a light stamp beats an OS in dark mode. */
+
+:root {
+  color-scheme: light;
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --muted: #898781;
+  --grid: #e1e0d9;
+  --axis: #c3c2b7;
+  --ring: rgba(11, 11, 11, 0.10);
+  --wash: rgba(11, 11, 11, 0.04);
+  --link: #1c5cab;
+  --focus: #2a78d6;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --radius: 10px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --ring: rgba(255, 255, 255, 0.10); --wash: rgba(255, 255, 255, 0.05);
+    --link: #86b6ef; --focus: #3987e5;
+    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --ring: rgba(255, 255, 255, 0.10); --wash: rgba(255, 255, 255, 0.05);
+  --link: #86b6ef; --focus: #3987e5;
+  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; background: var(--page); }
+body { color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+body.is-embed, body.is-embed html { background: transparent; }
+a { color: var(--link); }
+h1, h2, h3 { font-weight: 650; line-height: 1.25; letter-spacing: -0.01em; }
+h1 { font-size: 1.6rem; margin: 0.3rem 0 0.5rem; }
+.ox-muted { color: var(--ink-2); font-size: 0.92rem; }
+.ox-desc { color: var(--ink-2); margin: 0.1rem 0 1rem; max-width: 60rem; }
+
+.ox-topbar { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.55rem 1.25rem; background: var(--surface); border-bottom: 1px solid var(--ring); }
+.ox-brand { display: flex; flex-direction: column; text-decoration: none; line-height: 1.15; }
+.ox-brand-name { font-weight: 700; color: var(--ink); }
+.ox-brand-sub { color: var(--ink-2); font-size: 0.78rem; }
+.ox-nav { display: flex; gap: 1.1rem; font-size: 0.92rem; flex-wrap: wrap; }
+.ox-nav a { text-decoration: none; }
+.ox-main { max-width: 1180px; margin: 0 auto; padding: 1rem 1rem 4rem; }
+body.is-embed .ox-topbar { display: none; }
+body.is-embed .ox-main { padding: 2px; max-width: none; }
+
+/* -- a figure: its head, the selectors in one row, the drawing, the note, the table ------- */
+.ox-fig { background: var(--surface); border: 1px solid var(--ring); border-radius: var(--radius); padding: 0.85rem 1rem 0.75rem; min-width: 0; }
+.ox-fig-head { display: flex; justify-content: space-between; gap: 0.6rem; align-items: baseline; flex-wrap: wrap; }
+.ox-fig-head h2 { font-size: 1.05rem; margin: 0; }
+.ox-fig-tools { display: flex; gap: 0.8rem; font-size: 0.82rem; white-space: nowrap; }
+.ox-fig-tools button, .ox-fig-tools a { font: inherit; background: none; border: 0; padding: 0; color: var(--link); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+.ox-fig-shows { color: var(--ink-2); font-size: 0.9rem; margin: 0.2rem 0 0.4rem; max-width: 62rem; }
+.ox-controls { display: flex; flex-wrap: wrap; gap: 0.45rem 1rem; align-items: end; margin: 0.45rem 0 0.35rem; padding: 0.5rem 0.6rem; background: var(--wash); border-radius: 8px; }
+.ox-controls label { display: flex; flex-direction: column; gap: 0.1rem; font-size: 0.76rem; font-weight: 600; color: var(--ink-2); }
+.ox-controls select { font: inherit; font-size: 0.88rem; font-weight: 400; padding: 0.2rem 0.3rem; border: 1px solid var(--axis); border-radius: 6px; background: var(--surface); color: var(--ink); min-width: 9rem; max-width: 22rem; }
+.ox-controls select:focus-visible, .ox-cell:focus-visible, .ox-fig-tools button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.ox-plot { width: 100%; min-height: 360px; }
+.ox-plot.is-html, .ox-plot.is-empty { min-height: 0; }
+.ox-note { margin: 0.35rem 0 0; font-size: 0.86rem; color: var(--ink-2); }
+.ox-table-wrap { overflow-x: auto; margin-top: 0.5rem; max-height: 28rem; overflow-y: auto; }
+table.ox-table { border-collapse: collapse; font-size: 0.82rem; width: 100%; }
+.ox-table th, .ox-table td { padding: 0.25rem 0.5rem; border-bottom: 1px solid var(--grid); text-align: left; white-space: nowrap; }
+.ox-table th { color: var(--ink-2); font-weight: 600; position: sticky; top: 0; background: var(--surface); }
+.ox-table td.num, .ox-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* -- the long-run grid: floors across, ceilings down; a cell is a button ------------------- */
+.ox-legend { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; font-size: 0.82rem; color: var(--ink-2); margin: 0.2rem 0 0.5rem; }
+.ox-legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+.ox-swatch { width: 0.8rem; height: 0.8rem; border-radius: 3px; background: var(--c, var(--muted)); flex: none; }
+.ox-swatch.is-failed { background: repeating-linear-gradient(45deg, var(--axis) 0 2px, transparent 2px 5px); box-shadow: inset 0 0 0 1px var(--axis); }
+.ox-grids { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 0.8rem 1.4rem; }
+.ox-grid-title { font-size: 0.86rem; font-weight: 600; margin: 0 0 0.3rem; }
+.ox-grid-title .ox-tag { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--ink-2); margin-right: 0.35rem; }
+.ox-grid { display: grid; grid-template-columns: minmax(5.5rem, auto) repeat(var(--ncol, 4), minmax(0, 1fr)); gap: 2px; }
+.ox-grid .ox-head { font-size: 0.74rem; color: var(--ink-2); font-weight: 600; padding: 0.15rem 0.3rem; align-self: end; }
+.ox-grid .ox-rowhead { font-size: 0.78rem; color: var(--ink-2); font-weight: 600; padding: 0.3rem 0.4rem 0.3rem 0; align-self: center; line-height: 1.25; }
+.ox-cell { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 0.05rem; min-height: 5.2rem; padding: 0.4rem 0.45rem 0.4rem 0.75rem; border: 0; border-radius: 6px; font: inherit; text-align: left; color: var(--ink); cursor: pointer; background: color-mix(in srgb, var(--c, var(--muted)) 13%, var(--surface)); }
+.ox-cell::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; border-radius: 6px 0 0 6px; background: var(--c, var(--muted)); }
+.ox-cell:hover { background: color-mix(in srgb, var(--c, var(--muted)) 22%, var(--surface)); }
+.ox-cell[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--ink); }
+.ox-cell.is-failed { background: repeating-linear-gradient(45deg, var(--wash) 0 3px, transparent 3px 7px), var(--surface); box-shadow: inset 0 0 0 1px var(--axis); }
+.ox-cell.is-failed::before { background: var(--axis); }
+.ox-cell.is-failed[aria-pressed="true"] { box-shadow: inset 0 0 0 1px var(--axis), 0 0 0 2px var(--surface), 0 0 0 4px var(--ink); }
+.ox-cell-state { font-size: 1.15rem; font-weight: 700; line-height: 1.1; }
+.ox-cell-name { font-size: 0.74rem; color: var(--ink-2); line-height: 1.2; }
+.ox-cell-num { font-size: 0.76rem; font-variant-numeric: tabular-nums; margin-top: auto; }
+.ox-badge { display: inline-block; margin-left: 0.3rem; padding: 0 0.3rem; border: 1px solid var(--ink-2); border-radius: 4px; font-size: 0.66rem; font-weight: 600; color: var(--ink-2); vertical-align: 0.15em; }
+.ox-detail { margin: 0.8rem 0 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 0.2rem 1rem; font-size: 0.88rem; }
+.ox-detail dt { color: var(--ink-2); }
+.ox-detail dd { margin: 0; font-variant-numeric: tabular-nums; }
+.ox-detail-head { grid-column: 1 / -1; font-weight: 650; margin-top: 0.2rem; }
+
+/* -- the list of figures ----------------------------------------------------------------- */
+.ox-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+.ox-card { background: var(--surface); border: 1px solid var(--ring); border-radius: var(--radius); padding: 1rem; }
+.ox-card h2 { font-size: 1.05rem; margin: 0 0 0.3rem; }
+.ox-card p { margin: 0.2rem 0 0.6rem; color: var(--ink-2); font-size: 0.9rem; }
+
+@media (max-width: 600px) {
+  .ox-topbar { flex-direction: column; align-items: flex-start; padding: 0.5rem 0.75rem; }
+  .ox-main { padding: 0.75rem 0.75rem 3rem; }
+  .ox-fig { padding: 0.7rem 0.6rem 0.6rem; }
+  .ox-cell-name { display: none; }
+  .ox-cell { min-height: 4rem; }
+}
+@media (forced-colors: active) {
+  .ox-cell { border: 1px solid CanvasText; }
+  .ox-cell[aria-pressed="true"] { outline: 3px solid Highlight; }
+}

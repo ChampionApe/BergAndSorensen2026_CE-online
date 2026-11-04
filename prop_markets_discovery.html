@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>O.10 The discovery tax and the retained endowment: an exact split with no sign – The Environmental Macroeconomics of the Circular Economy</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./thm_markets_survival.html" rel="next">
+<link href="./prop_markets_decentralisation.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-26acbcf1308ed1f25f0c15c86df82a41.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-ec21bed48f8a3b8439e5656f195f4a7f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-26acbcf1308ed1f25f0c15c86df82a41.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script defer="" src="vendor/mathjax-3.2.2/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./prop_longrun_availability.html">Proofs</a></li><li class="breadcrumb-item"><a href="./prop_markets_discovery.html"><span class="chapter-title">O.10 The discovery tax and the retained endowment: an exact split with no sign</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">The Environmental Macroeconomics of the Circular Economy</a> 
+        <div class="sidebar-tools-main">
+    <a href="./explorer/web/index.html" title="Every figure" class="quarto-navigation-tool px-1" aria-label="Every figure"><i class="bi bi-bar-chart-line"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The online appendix</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Notation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Proofs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_longrun_availability.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.1 Which long-run states each cell makes available</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_longrun_availability_continued.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.1, continued: the workhorse’s balanced paths</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_longrun_closure.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.2 The closure criterion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./longrun_state_c.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.3 When state C is available: the tail condition and the workhorse’s path</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_longrun_select_a.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.4 Selection against collapse, and when a collapse path has a finite value</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_longrun_select_b.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.5 Selection against balanced dematerialization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_markets_entry.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.6 The entry condition into treatment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_markets_fee_sign.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.7 The sign of the gate fee without the emission tax</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_markets_ordering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.8 The planner’s entry margin against open access</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_markets_decentralisation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.9 The planner’s allocation as a competitive equilibrium</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop_markets_discovery.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">O.10 The discovery tax and the retained endowment: an exact split with no sign</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./thm_markets_survival.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.11 A laissez-faire collapse where the planner survives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./thm_markets_survival_continued.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">O.11, continued: the planner’s side, a path with a finite value and an optimal path</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./longrun_lemmas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Shared lemmas: the first-order conditions, the pollution price and the material budget</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Robustness and figures</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./century.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The century fit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./taxonomy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The long-run taxonomy and the floor grid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./leakage.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Leakage against welfare</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./corners.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The sixteen corners</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./gatefee.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The gate-fee band</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./phases.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The phases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pairs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The preference pairs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./horizon.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The horizon</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./experiments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The observed-policy experiments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sensitivity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The sensitivities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_century.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The series behind the century fit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_extraction.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The extraction-cost index</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#the-statement" id="toc-the-statement" class="nav-link active" data-scroll-target="#the-statement">The statement</a></li>
+  <li><a href="#what-the-proof-uses" id="toc-what-the-proof-uses" class="nav-link" data-scroll-target="#what-the-proof-uses">What the proof uses</a></li>
+  <li><a href="#retention-probabilities" id="toc-retention-probabilities" class="nav-link" data-scroll-target="#retention-probabilities">Retention probabilities</a></li>
+  <li><a href="#proof-of-proposition-13" id="toc-proof-of-proposition-13" class="nav-link" data-scroll-target="#proof-of-proposition-13">Proof of Proposition 13</a></li>
+  <li><a href="#two-paths-on-which-the-untaxed-one-retains-less" id="toc-two-paths-on-which-the-untaxed-one-retains-less" class="nav-link" data-scroll-target="#two-paths-on-which-the-untaxed-one-retains-less">Two paths on which the untaxed one retains less</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./prop_longrun_availability.html">Proofs</a></li><li class="breadcrumb-item"><a href="./prop_markets_discovery.html"><span class="chapter-title">O.10 The discovery tax and the retained endowment: an exact split with no sign</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">O.10 The discovery tax and the retained endowment: an exact split with no sign</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Proposition 13 of the paper, stated in Appendix C, compares the retained material endowment of two feasible paths, which it calls the untaxed and the taxed path. It splits the difference exactly into a direct term, from extraction, and an indirect term, from the rates at which the two paths lose matter, signs each term under its premises, and shows that the accounting does not sign their sum. This page proves it in full. Symbols are the paper’s, as on the <a href="./notation.html">notation page</a>; a symbol the proof needs beyond them is defined where it is first used.</p>
+<section id="the-statement" class="level2">
+<h2 class="anchored" data-anchor-id="the-statement">The statement</h2>
+<p><strong>Proposition 13 (the discovery tax and the retained endowment).</strong> <em>General primitives. For any two feasible paths from the same initial stocks, each with nonnegative gross investment, the difference in the retained endowment decomposes exactly into a direct term, the extraction difference weighted by the untaxed path’s retention probabilities, and an indirect term, the change in the leakage of the taxed path’s inflows and of the initial stocks when the untaxed retention schedule replaces the taxed one. The direct term is nonnegative when the untaxed path extracts at least as much at every date; the indirect term is nonpositive when the untaxed path’s loss rates are at least as high at every date and the storage shares coincide, which they do at <span class="math inline">\(\phi^I=0\)</span>. The accounting does not sign the sum: there are two feasible paths meeting all three premises with the untaxed one retaining less.</em></p>
+<p>The names of the two paths come from Section 4.5 of the paper, which reads the proposition as the effect of the <em>discovery tax</em> <span class="math inline">\(\tau^X\)</span>, levied per tonne discovered (Section 4.1). The proposition holds for any two feasible paths, and we label them 0, the untaxed path, and 1, the taxed path. We take the simplest route for the paper’s assumptions. The decomposition and the two signs are accounting on the constraints of Problem 1 and hold for general primitives; no price, tax or equilibrium condition enters. The example of the last sentence is built in the Cobb-Douglas form of the paper’s workhorse, without a floor, under the soft ceiling and with <span class="math inline">\(\phi^I=0\)</span>.</p>
+</section>
+<section id="what-the-proof-uses" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-proof-uses">What the proof uses</h2>
+<p><strong>From Section 2 of the paper.</strong> A <em>feasible path</em> meets every constraint of Problem 1, the goods constraint, the ledger, the intensity condition and the transitions, with the flows as Section 2 defines them, the domains <span class="math inline">\(C,N,D,K^R,W,\Omega\ge0\)</span>, <span class="math inline">\(K_{t+1}\ge0\)</span> and <span class="math inline">\(\varpi_t\in\left[0,1\right]\)</span>, and the mass restrictions <span class="math inline">\(S_t\ge0\)</span>, <span class="math inline">\(X_t\le\bar X_{\max}\)</span> and <span class="math inline">\(M^K_t\ge0\)</span>, from given initial stocks with <span class="math inline">\(\mathcal W_0\ge0\)</span>. On it <span class="math inline">\(\mathcal W_t\ge0\)</span> at every date, by <span class="math inline">\(W_t\ge0\)</span> and <span class="math inline">\(\mu&lt;1\)</span>, so the handled flow <span class="math inline">\(H_t=\mu\mathcal W_t\)</span> is nonnegative. Every cost flow is nonnegative: <span class="math inline">\(C^N\left(0,S,t\right)=0\)</span> with <span class="math inline">\(C^N_N&gt;0\)</span>, likewise <span class="math inline">\(C^D\)</span>, and <span class="math inline">\(c^c&gt;0\)</span> and <span class="math inline">\(c^T\ge0\)</span>, as <span class="math inline">\(c^T\left(0\right)=0\)</span> with <span class="math inline">\(c^{T\prime}&gt;0\)</span>. The yield rises from <span class="math inline">\(a\left(0,t\right)=0\)</span> towards <span class="math inline">\(\bar a\)</span>, so <span class="math inline">\(0\le a&lt;\bar a\le1\)</span>. Recovered material is <span class="math inline">\(R^R_t=a_t\varpi_tH_t\)</span> with <span class="math inline">\(a_t\equiv a\left(x_t,t\right)\)</span>; at a date with no treated flow, <span class="math inline">\(\varpi_tH_t=0\)</span>, nothing is recovered, and we set <span class="math inline">\(a_t\varpi_t\equiv0\)</span>. The displaced mass <span class="math inline">\(\mathcal N=\Omega^{N,S}N+\Omega^{D,S}D\)</span> goes to the environment and enters neither <span class="math inline">\(M^K\)</span> nor <span class="math inline">\(\mathcal W\)</span>, so the <em>inflow</em> of the two anthropogenic stocks is extraction alone.</p>
+<p><strong>From Section 3 and Appendices A and B.</strong> With <span class="math inline">\(\mathcal M_t\equiv M^K_t+\mathcal W_t\)</span>, the collected ledger of Section 2 reads <span class="math inline">\(\Delta\mathcal M_{t+1}=N_t-\left(1-a_t\varpi_t\right)H_t\)</span>, and summed over the periods before a date <span class="math inline">\(\bar t\)</span> it is the summed ledger of Appendix B.1, <span id="tag-l"></span> <span class="math display">\[
+\mathcal M_{\bar t}=\mathcal M_0+\sum_{t&lt;\bar t}N_t-\sum_{t&lt;\bar t}\left(1-a_t\varpi_t\right)H_t .
+\tag{L}
+\]</span> Proposition 1(i) bounds the inflow: summing the transitions of <span class="math inline">\(S\)</span> and <span class="math inline">\(X\)</span>, <span class="math inline">\(\sum_{t&lt;\bar t}N_t=S_0-S_{\bar t}+X_{\bar t}-X_0\)</span>, which <span class="math inline">\(S_{\bar t}\ge0\)</span> and <span class="math inline">\(X_{\bar t}\le\bar X_{\max}\)</span> bound by the virgin budget <span class="math inline">\(\bar N\equiv S_0+\bar X_{\max}-X_0\)</span>; so <span class="math inline">\(\sum_tN_t\le\bar N\)</span>. Proposition 3 calls <span class="math inline">\(\mathcal M_\infty\equiv\lim_{t\to\infty}\mathcal M_t\)</span> the <em>retained material endowment</em> and states that it exists on every feasible path; <a href="#lemma-m">Lemma M</a> derives this again on the paths the proposition concerns. Appendix B calls <span class="math inline">\(\ell_t\equiv\mu\left(1-a_t\varpi_t\right)\)</span> the <em>loss rate</em> of the waste stock, “the share of the stock at the start of period <span class="math inline">\(t\)</span> that is handled and not recovered”; so <span class="math inline">\(\ell_t\in\left[0,\mu\right]\)</span>, with <span class="math inline">\(\ell_t=\mu\)</span> at a date with no treated flow. Appendix A calls <span class="math inline">\(\sigma\equiv\Phi^IG/R\)</span>, with <span class="math inline">\(\Phi^I=\Omega\phi^I\)</span>, the <em>storage share</em>, “the fraction of the material entering production that new capital embodies”; we set <span class="math inline">\(\sigma_t\equiv0\)</span> at a date with <span class="math inline">\(R_t=0\)</span>. With a superscript naming the path, the three premises of the proposition read, at every date <span class="math inline">\(t\)</span>, <span class="math display">\[
+\text{(P1)}\ \ N^0_t\ge N^1_t,
+\qquad
+\text{(P2)}\ \ \ell^0_t\ge\ell^1_t,
+\qquad
+\text{(P3)}\ \ \sigma^0_t=\sigma^1_t .
+\]</span></p>
+</section>
+<section id="retention-probabilities" class="level2">
+<h2 class="anchored" data-anchor-id="retention-probabilities">Retention probabilities</h2>
+<p><span id="lemma-m"><strong>Lemma M.</strong></span> <em>Let a feasible path have <span class="math inline">\(G_t\ge0\)</span> at every date.</em></p>
+<p><em>(a) At every date <span class="math inline">\(\sigma_t\in\left[0,1\right]\)</span> and <span class="math inline">\(\Phi^I_tG_t=\sigma_tR_t\)</span>, and with <span class="math inline">\(\mathbf z_t\equiv\left(M^K_t,\mathcal W_t\right)^\top\)</span></em> <span id="tag-z"></span> <span class="math display">\[
+\mathbf z_{t+1}=\mathbf Q_t\mathbf z_t+\mathbf b_tN_t,
+\qquad
+\mathbf Q_t\equiv\begin{pmatrix}1-\delta&amp;\sigma_t\left(\mu-\ell_t\right)\\[2pt]\delta&amp;1-\mu+\left(1-\sigma_t\right)\left(\mu-\ell_t\right)\end{pmatrix},
+\qquad
+\mathbf b_t\equiv\begin{pmatrix}\sigma_t\\[2pt]1-\sigma_t\end{pmatrix}.
+\tag{Z}
+\]</span></p>
+<p><em>(b) For <span class="math inline">\(t\le\bar t\)</span> let <span class="math inline">\(\varrho_{t,\bar t}^\top\equiv\mathbf 1^\top\mathbf Q_{\bar t-1}\mathbf Q_{\bar t-2}\cdots\mathbf Q_t\)</span>, with <span class="math inline">\(\mathbf 1\equiv\left(1,1\right)^\top\)</span> and <span class="math inline">\(\varrho_{\bar t,\bar t}\equiv\mathbf 1\)</span>. Its entries lie in <span class="math inline">\(\left[0,1\right]\)</span> and do not increase with <span class="math inline">\(\bar t\)</span>, so the limit <span class="math inline">\(\varrho_t\equiv\lim_{\bar t\to\infty}\varrho_{t,\bar t}\equiv\left(\varrho^M_t,\varrho^{\mathcal W}_t\right)^\top\)</span> exists in <span class="math inline">\(\left[0,1\right]^2\)</span>.</em></p>
+<p><em>(c) The retained endowment exists, and with <span class="math inline">\(\varrho^N_s\equiv\varrho_{s+1}^\top\mathbf b_s\in\left[0,1\right]\)</span>,</em> <span id="tag-r"></span> <span class="math display">\[
+\mathcal M_\infty=\varrho^M_0M^K_0+\varrho^{\mathcal W}_0\mathcal W_0+\sum_{s\ge0}\varrho^N_sN_s ,
+\tag{R}
+\]</span> <em>the series converging.</em></p>
+<p>We call <span class="math inline">\(\varrho^M_t\)</span> and <span class="math inline">\(\varrho^{\mathcal W}_t\)</span> the <strong>retention probabilities</strong> of a tonne in <span class="math inline">\(M^K_t\)</span> and in <span class="math inline">\(\mathcal W_t\)</span>, and <span class="math inline">\(\varrho^N_s\)</span> that of a tonne extracted at <span class="math inline">\(s\)</span>; a path’s <strong>retention schedule</strong> is the sequence of them. They depend on the path only through its loss rates and storage shares. (Z) says how a tonne moves: one in <span class="math inline">\(M^K_t\)</span> is released into the waste stock with probability <span class="math inline">\(\delta\)</span>, and one in <span class="math inline">\(\mathcal W_t\)</span> is lost with probability <span class="math inline">\(\ell_t\)</span> and is otherwise, at <span class="math inline">\(t+1\)</span>, in the waste stock or, recovered and stored, in capital; <span class="math inline">\(\varrho_{t,\bar t}\)</span> is the probability that a tonne held at <span class="math inline">\(t\)</span> is still held at <span class="math inline">\(\bar t\)</span>. The proof uses only the algebra.</p>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span></p>
+<ol type="a">
+<li><p>Every term of <span class="math inline">\(\mathcal D_t\)</span> is a relative intensity <span class="math inline">\(\omega^j\ge0\)</span> times a nonnegative flow: consumption, a cost flow, or output, which is nonnegative because the goods constraint gives <span class="math inline">\(Y_t=C_t+G_t+C^N_t+C^D_t+C^W_t\ge0\)</span> when <span class="math inline">\(G_t\ge0\)</span>. In the intensity condition <span class="math inline">\(R_t=\Omega_t\mathcal D_t+\Phi^I_tG_t\)</span> both terms are then nonnegative, as <span class="math inline">\(\Omega_t\ge0\)</span> and <span class="math inline">\(\phi^I\ge0\)</span>, so <span class="math inline">\(0\le\Phi^I_tG_t\le R_t\)</span>. This gives <span class="math inline">\(\sigma_t\in\left[0,1\right]\)</span>, and where <span class="math inline">\(R_t=0\)</span> it gives <span class="math inline">\(\Phi^I_tG_t=0=\sigma_tR_t\)</span>. The transition of <span class="math inline">\(M^K\)</span> becomes <span class="math inline">\(M^K_{t+1}=\left(1-\delta\right)M^K_t+\sigma_tR_t\)</span>, the ledger <span class="math inline">\(W_t=R_t-\Delta M^K_{t+1}=\left(1-\sigma_t\right)R_t+\delta M^K_t\)</span>, and the transition of the waste stock <span class="math inline">\(\mathcal W_{t+1}=\left(1-\mu\right)\mathcal W_t+\delta M^K_t+\left(1-\sigma_t\right)R_t\)</span>. Substituting <span class="math inline">\(R_t=N_t+a_t\varpi_t\mu\mathcal W_t=N_t+\left(\mu-\ell_t\right)\mathcal W_t\)</span> gives (Z).</p></li>
+<li><p>As <span class="math inline">\(0\le\ell_t\le\mu&lt;1\)</span>, <span class="math inline">\(0\le\sigma_t\le1\)</span> and <span class="math inline">\(0&lt;\delta&lt;1\)</span>, <span class="math inline">\(\mathbf Q_t\)</span> and <span class="math inline">\(\mathbf b_t\)</span> are entrywise nonnegative, with column sums <span class="math inline">\(\mathbf 1^\top\mathbf Q_t=\left(1,\,1-\ell_t\right)\le\mathbf 1^\top\)</span> and <span class="math inline">\(\mathbf 1^\top\mathbf b_t=1\)</span>. So <span class="math inline">\(\varrho_{t,\bar t}\ge0\)</span>, and for <span class="math inline">\(\bar t&gt;t\)</span> <span class="math display">\[
+\varrho_{t,\bar t}^\top=\left(\mathbf 1^\top\mathbf Q_{\bar t-1}\right)\mathbf Q_{\bar t-2}\cdots\mathbf Q_t\;\le\;\mathbf 1^\top\mathbf Q_{\bar t-2}\cdots\mathbf Q_t=\varrho_{t,\bar t-1}^\top ,
+\]</span> the matrices being nonnegative and an empty product being the identity. By induction <span class="math inline">\(\varrho_{t,\bar t}\le\varrho_{t,t}=\mathbf 1\)</span>, and a nonincreasing sequence in <span class="math inline">\(\left[0,1\right]\)</span> converges.</p></li>
+<li><p>Iterating (Z) from <span class="math inline">\(0\)</span> to <span class="math inline">\(\bar t\)</span> and multiplying by <span class="math inline">\(\mathbf 1^\top\)</span>, since <span class="math inline">\(\mathcal M_{\bar t}=\mathbf 1^\top\mathbf z_{\bar t}\)</span>, <span class="math display">\[
+\mathcal M_{\bar t}=\varrho_{0,\bar t}^\top\mathbf z_0+\sum_{s&lt;\bar t}f_s\left(\bar t\right),
+\qquad
+f_s\left(\bar t\right)\equiv\varrho_{s+1,\bar t}^\top\mathbf b_sN_s .
+\]</span> By (b), <span class="math inline">\(f_s\left(\bar t\right)\in\left[0,N_s\right]\)</span> and <span class="math inline">\(f_s\left(\bar t\right)\to\varrho^N_sN_s\)</span> as <span class="math inline">\(\bar t\to\infty\)</span>, with <span class="math inline">\(\varrho^N_s\in\left[0,1\right]\)</span>. Since <span class="math inline">\(\sum_sN_s\le\bar N\)</span>, for every <span class="math inline">\(\upsilon&gt;0\)</span> there is a date <span class="math inline">\(s_\upsilon\)</span> with <span class="math inline">\(\sum_{s\ge s_\upsilon}N_s&lt;\upsilon\)</span>, and for <span class="math inline">\(\bar t&gt;s_\upsilon\)</span> <span class="math display">\[
+\Big|\sum_{s&lt;\bar t}f_s\left(\bar t\right)-\sum_{s\ge0}\varrho^N_sN_s\Big|\;\le\;\sum_{s&lt;s_\upsilon}\big|f_s\left(\bar t\right)-\varrho^N_sN_s\big|+2\upsilon ,
+\]</span> where the finite sum tends to zero. As <span class="math inline">\(\varrho_{0,\bar t}^\top\mathbf z_0\to\varrho_0^\top\mathbf z_0\)</span> too, <span class="math inline">\(\mathcal M_{\bar t}\)</span> converges, to the right side of (R).</p></li>
+</ol>
+</div>
+<p>At fixed loss rates and storage shares the right side of (R) is linear in the initial stocks and the inflow. And what is not retained leaks: letting <span class="math inline">\(\bar t\to\infty\)</span> in (L), the cumulated leakage <span class="math inline">\(\sum_t\left(1-a_t\varpi_t\right)H_t\)</span> equals <span class="math inline">\(\mathcal M_0+\sum_tN_t-\mathcal M_\infty\)</span>, which by (R) is the initial stocks and the inflow each weighted by one minus its retention probability.</p>
+</section>
+<section id="proof-of-proposition-13" class="level2">
+<h2 class="anchored" data-anchor-id="proof-of-proposition-13">Proof of Proposition 13</h2>
+<p>Let paths 0 and 1 be feasible from the same initial stocks, so with a common <span class="math inline">\(\mathbf z_0=\left(M^K_0,\mathcal W_0\right)^\top\ge0\)</span>, and let each have <span class="math inline">\(G_t\ge0\)</span> at every date; write <span class="math inline">\(\Delta Z\equiv Z^0-Z^1\)</span>. For a mass made of initial stocks <span class="math inline">\(\mathbf z\ge0\)</span> and a nonnegative summable inflow <span class="math inline">\(e\)</span>, let <span class="math display">\[
+\mathcal E^j\left(\mathbf z,e\right)\equiv\left(\varrho^j_0\right)^\top\mathbf z+\sum_{s\ge0}\varrho^{N,j}_se_s ,
+\]</span> the part of it that path <span class="math inline">\(j\)</span>’s retention schedule retains, at most <span class="math inline">\(\mathbf 1^\top\mathbf z+\sum_se_s\)</span>; the rest, <span class="math inline">\(\mathbf 1^\top\mathbf z+\sum_se_s-\mathcal E^j\left(\mathbf z,e\right)\)</span>, is the part that schedule lets leak. By Lemma M, <span class="math inline">\(\mathcal M^j_\infty=\mathcal E^j\left(\mathbf z_0,N^j\right)\)</span>, and by the paragraph after it the leakage of path 1’s own mass <span class="math inline">\(\left(\mathbf z_0,N^1\right)\)</span> under its own schedule is what path 1 actually loses, <span class="math inline">\(\sum_t\left(1-a^1_t\varpi^1_t\right)H^1_t\)</span>.</p>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Step 1: the decomposition is exact.</em> Adding and subtracting <span class="math inline">\(\mathcal E^0\left(\mathbf z_0,N^1\right)\)</span>, <span id="tag-d"></span> <span class="math display">\[
+\Delta\mathcal M_\infty
+=\underbrace{\sum_{s\ge0}\varrho^{N,0}_s\,\Delta N_s}_{\text{direct}}
++\underbrace{\big(\varrho^0_0-\varrho^1_0\big)^\top\mathbf z_0+\sum_{s\ge0}\big(\varrho^{N,0}_s-\varrho^{N,1}_s\big)N^1_s}_{\text{indirect}} ,
+\tag{D}
+\]</span> every series converging absolutely, its terms being bounded by <span class="math inline">\(N^0_s+N^1_s\)</span>. The direct term is the extraction difference weighted by the untaxed path’s retention probabilities. The indirect term is <span class="math inline">\(\mathcal E^0\left(\mathbf z_0,N^1\right)-\mathcal E^1\left(\mathbf z_0,N^1\right)\)</span>, which is the leakage of the taxed path’s inflow and of the initial stocks under the taxed schedule less their leakage under the untaxed schedule. It is the change in that leakage when the untaxed retention schedule replaces the taxed one, counted as what it does to the endowment, that is with a minus sign: more leakage, less endowment.</p>
+<p><em>Step 2: under (P1) the direct term is nonnegative.</em> Every weight <span class="math inline">\(\varrho^{N,0}_s\)</span> is nonnegative by Lemma M, and every <span class="math inline">\(\Delta N_s\)</span> is nonnegative under (P1).</p>
+<p><em>Step 3: under (P2) and (P3) the indirect term is nonpositive.</em> At a common <span class="math inline">\(\sigma_t\)</span> the two entries of the second column of <span class="math inline">\(\mathbf Q_t\)</span>, <span class="math inline">\(\sigma_t\left(\mu-\ell_t\right)\)</span> and <span class="math inline">\(1-\mu+\left(1-\sigma_t\right)\left(\mu-\ell_t\right)\)</span>, are nonincreasing in <span class="math inline">\(\ell_t\)</span>, and the first column does not involve <span class="math inline">\(\ell_t\)</span>; so (P2) and (P3) give <span class="math inline">\(\mathbf Q^0_t\le\mathbf Q^1_t\)</span> entrywise. Backward from <span class="math inline">\(\varrho^0_{\bar t,\bar t}=\varrho^1_{\bar t,\bar t}=\mathbf 1\)</span>, if <span class="math inline">\(\varrho^0_{t+1,\bar t}\le\varrho^1_{t+1,\bar t}\)</span>, then <span class="math display">\[
+\varrho^0_{t,\bar t}=\left(\mathbf Q^0_t\right)^\top\varrho^0_{t+1,\bar t}\;\le\;\left(\mathbf Q^0_t\right)^\top\varrho^1_{t+1,\bar t}\;\le\;\left(\mathbf Q^1_t\right)^\top\varrho^1_{t+1,\bar t}=\varrho^1_{t,\bar t},
+\]</span> the first inequality because <span class="math inline">\(\mathbf Q^0_t\ge0\)</span> and the second because <span class="math inline">\(\varrho^1_{t+1,\bar t}\ge0\)</span>. In the limit <span class="math inline">\(\varrho^0_t\le\varrho^1_t\)</span>, and with the common <span class="math inline">\(\mathbf b_s\)</span>, <span class="math inline">\(\varrho^{N,0}_s\le\varrho^{N,1}_s\)</span>. As <span class="math inline">\(\mathbf z_0\ge0\)</span> and <span class="math inline">\(N^1_s\ge0\)</span>, every term of the indirect term is nonpositive. At <span class="math inline">\(\phi^I=0\)</span>, <span class="math inline">\(\Phi^I=\Omega\phi^I=0\)</span>, so <span class="math inline">\(\sigma_t=0\)</span> on every path and (P3) holds.</p>
+</div>
+<p>The last sentence of the proposition is proved in <em>Two paths on which the untaxed one retains less</em>. Discovery appears in neither (R) nor (D): its displaced mass goes to the environment, so exploration reaches the endowment only through the extraction of the reserves it finds, in the direct term, and through whatever differences in loss rates and storage shares accompany it, in the indirect one.</p>
+</section>
+<section id="two-paths-on-which-the-untaxed-one-retains-less" class="level2">
+<h2 class="anchored" data-anchor-id="two-paths-on-which-the-untaxed-one-retains-less">Two paths on which the untaxed one retains less</h2>
+<p>The example needs a loop that closes, and the economy below lets one be built from any date at which the waste stock is positive and capital is large enough.</p>
+<p><em>The economy.</em> There is no floor, <span class="math inline">\(\bar R=0\)</span>, and output is <span class="math display">\[
+\mathcal F\left(K^Y,R^e,P,t\right)=A_0\Gamma^te^{-\kappa P}\left(K^Y\right)^{\beta_K}\left(R^e\right)^{\gamma},
+\qquad A_0&gt;0,\ \ \Gamma&gt;1,\ \ \kappa&gt;0,\ \ \beta_K,\gamma&gt;0,\ \ \beta_K+\gamma&lt;1 ,
+\]</span> the Cobb-Douglas form of the paper’s workhorse with <span class="math inline">\(B_t\equiv1\)</span> and <span class="math inline">\(A_t=A_0\Gamma^t\)</span>. It has the signs of Section 2, is concave in <span class="math inline">\(\left(K^Y,R^e\right)\)</span>, its Hessian there having negative diagonal and determinant proportional to <span class="math inline">\(\beta_K\gamma\left(1-\beta_K-\gamma\right)&gt;0\)</span>, and has <span class="math inline">\(\mathcal F_K\to\infty\)</span> as <span class="math inline">\(K^Y\to0\)</span> at any <span class="math inline">\(R^e&gt;0\)</span>. The yield is <span class="math inline">\(a\left(x\right)=1-e^{-x}\)</span>, which has the properties of Section 2 under the soft ceiling <span class="math inline">\(\bar a=1\)</span>; <span class="math inline">\(\phi^I=0\)</span> and <span class="math inline">\(\omega^Y&gt;0\)</span>. Every other primitive is any that Section 2 allows. The initial stocks are <span class="math inline">\(M^K_0=0\)</span>, <span class="math inline">\(\mathcal W_0&gt;0\)</span>, <span class="math inline">\(S_0&gt;0\)</span>, <span class="math inline">\(X_0\le\bar X_{\max}\)</span>, <span class="math inline">\(P_0\ge0\)</span> and a capital stock <span class="math inline">\(K_0\)</span> chosen below, as <span class="math inline">\(A_0\)</span> is. With <span class="math inline">\(\phi^I=0\)</span> the transition of <span class="math inline">\(M^K\)</span> keeps <span class="math inline">\(M^K_t=0\)</span>, so <span class="math inline">\(\mathcal M_t=\mathcal W_t\)</span>, the ledger gives <span class="math inline">\(W_t=R_t\)</span>, and <span class="math inline">\(\mathcal W_{t+1}=\left(1-\ell_t\right)\mathcal W_t+N_t\)</span>. Fix <span class="math inline">\(\hat x\)</span> with <span class="math inline">\(e^{-\hat x}\le\min\left\{\delta,\tfrac14\right\}\)</span>, let <span class="math inline">\(\hat x_t\equiv\hat x+t\)</span>, and let <span class="math inline">\(c^{\mathrm{full}}\equiv c^c\left(0\right)+c^T\left(1,0\right)\)</span>, which bounds the handling cost per handled tonne at full treatment at every date, both charges being nonincreasing in time.</p>
+<p><span id="lemma-k"><strong>Lemma K.</strong></span> <em>In this economy take the stocks at a date <span class="math inline">\(t_0\ge0\)</span>, the initial ones if <span class="math inline">\(t_0=0\)</span> and otherwise those left by a path that meets every constraint, domain and mass restriction of Problem 1 at the dates before <span class="math inline">\(t_0\)</span>, and let them have <span class="math inline">\(M^K_{t_0}=0\)</span>, <span class="math inline">\(S_{t_0}\ge0\)</span>, <span class="math inline">\(X_{t_0}\le\bar X_{\max}\)</span>, <span class="math inline">\(P_{t_0}\ge0\)</span>, <span class="math inline">\(w\equiv\mathcal W_{t_0}&gt;0\)</span> and <span class="math inline">\(K_{t_0}&gt;\hat x_{t_0}\mu w\)</span>; let <span class="math inline">\(k\equiv K_{t_0}-\hat x_{t_0}\mu w\)</span>. For <span class="math inline">\(t\ge t_0\)</span> set <span class="math inline">\(N_t=D_t=0\)</span>, <span class="math inline">\(\varpi_t=1\)</span>, <span class="math inline">\(K^R_t=\hat x_t\mu\mathcal W_t\)</span>, <span class="math inline">\(K_{t+1}=k+K^R_{t+1}\)</span> and <span class="math inline">\(I_t\equiv K_{t+1}-K_t\)</span>, and take <span class="math inline">\(C_t\)</span> from the goods constraint, <span class="math inline">\(\Omega_t\equiv R_t/\mathcal D_t\)</span>, <span class="math inline">\(W_t\)</span> from the ledger and the other states from the transitions. Then for <span class="math inline">\(t\ge t_0\)</span>, <span class="math inline">\(\ell_t=\mu e^{-\hat x_t}\)</span> and <span class="math inline">\(\mathcal W_t\)</span> is nonincreasing with <span class="math inline">\(\tfrac12w\le\mathcal W_t\le w\)</span>, so <span class="math inline">\(\tfrac12w\le\mathcal M_\infty\le w\)</span>. If moreover</em> <span id="tag-k"></span> <span class="math display">\[
+A_0\,\underline y\;\ge\;\max\Big\{\delta k+\left(\hat x+1+c^{\mathrm{full}}\right)\mu w,\ \frac{\mu w}{\ln\Gamma}\Big\},
+\qquad
+\underline y\equiv e^{-\kappa\left(P_{t_0}+w\right)}k^{\beta_K}\left(\tfrac38\mu w\right)^{\gamma},
+\tag{K}
+\]</span> <em>every constraint, domain and mass restriction of Problem 1 holds at every <span class="math inline">\(t\ge t_0\)</span>, with <span class="math inline">\(G_t&gt;0\)</span>, so that the path continued in this way is feasible.</em></p>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>The material block does not involve capital.</em> At <span class="math inline">\(t\ge t_0\)</span> the treated flow is <span class="math inline">\(\varpi_tH_t=\mu\mathcal W_t\)</span>, positive by induction, so capital per treated tonne is <span class="math inline">\(x_t=K^R_t/\left(\varpi_tH_t\right)=\hat x_t\)</span>, <span class="math inline">\(R_t=R^R_t=\left(1-e^{-\hat x_t}\right)\mu\mathcal W_t\)</span>, <span class="math inline">\(\ell_t=\mu e^{-\hat x_t}\)</span> and <span class="math inline">\(\mathcal W_{t+1}=\left(1-\ell_t\right)\mathcal W_t\)</span>. So <span class="math inline">\(\mathcal W_{t+1}\)</span>, and with it <span class="math inline">\(K_{t+1}\)</span>, is fixed at <span class="math inline">\(t\)</span>, and the construction is recursive. As <span class="math inline">\(\hat x_s\ge\hat x+\left(s-t_0\right)\)</span>, <span class="math inline">\(\sum_{s\ge t_0}\ell_s\le\mu e^{-\hat x}\sum_{j\ge0}e^{-j}&lt;2e^{-\hat x}\le\tfrac12\)</span>, and <span class="math inline">\(\prod_s\left(1-\ell_s\right)\ge1-\sum_s\ell_s\)</span> by induction, so <span class="math inline">\(w\ge\mathcal W_t\ge\tfrac12w\)</span> and <span class="math inline">\(R_t\ge\left(1-e^{-\hat x}\right)\tfrac12\mu w\ge\tfrac38\mu w\)</span>. No mass is displaced, and the handled stream emits <span class="math inline">\(\Xi_t=d^We^{-\hat x_t}\mu\mathcal W_t=d^W\ell_t\mathcal W_t\le\mathcal W_t-\mathcal W_{t+1}\)</span>, so from <span class="math inline">\(0\le P_{t+1}\le P_t+\Xi_t\)</span>, as <span class="math inline">\(\theta\in\left(0,1\right)\)</span> and <span class="math inline">\(P_{t_0}\ge0\)</span>, <span class="math inline">\(0\le P_t\le P_{t_0}+w\)</span>.</p>
+<p><em>Capital.</em> <span class="math inline">\(K_t=k+K^R_t\)</span> at every <span class="math inline">\(t\ge t_0\)</span>, at <span class="math inline">\(t_0\)</span> by the definition of <span class="math inline">\(k\)</span>, so <span class="math inline">\(K^Y_t=k&gt;0\)</span> and <span class="math inline">\(K^R_t&lt;K_t\)</span>. Since <span class="math inline">\(\ell_t&lt;e^{-\hat x}\le\delta\)</span> and <span class="math inline">\(\hat x_{t+1}=\hat x_t+1\)</span>, <span class="math display">\[
+G_t=K_{t+1}-\left(1-\delta\right)K_t=\delta k+\mu\mathcal W_t\Big[\left(\hat x_t+1\right)\left(1-\ell_t\right)-\left(1-\delta\right)\hat x_t\Big]\;\ge\;\delta k&gt;0 ,
+\]</span> and <span class="math inline">\(G_t\le\delta k+\hat x_{t+1}\mu\mathcal W_{t+1}\le\delta k+\left(\hat x+t+1\right)\mu w\)</span>.</p>
+<p><em>Consumption.</em> By the bounds on <span class="math inline">\(R_t\)</span> and <span class="math inline">\(P_t\)</span>, <span class="math inline">\(Y_t\ge A_0\Gamma^t\underline y\)</span>. Extraction and exploration cost nothing, and <span class="math inline">\(C^W_t=\left[c^c\left(t\right)+c^T\left(1,t\right)\right]\mu\mathcal W_t\le c^{\mathrm{full}}\mu w\)</span>. With <span class="math inline">\(\Gamma^t\ge1+t\ln\Gamma\)</span>, <span class="math display">\[
+C_t=Y_t-G_t-C^W_t\;\ge\;\Big[A_0\underline y-\delta k-\left(\hat x+1+c^{\mathrm{full}}\right)\mu w\Big]+t\Big[A_0\underline y\ln\Gamma-\mu w\Big]\;\ge\;0
+\]</span> by (K).</p>
+<p><em>The rest.</em> <span class="math inline">\(\mathcal D_t\ge\omega^YY_t&gt;0\)</span>, so <span class="math inline">\(\Omega_t\ge0\)</span> is finite and the intensity condition holds; the ledger gives <span class="math inline">\(W_t=R_t\ge0\)</span>; <span class="math inline">\(N_t=D_t=0\)</span>, <span class="math inline">\(\varpi_t=1\)</span>, <span class="math inline">\(K^R_t\ge0\)</span> and <span class="math inline">\(K_{t+1}&gt;0\)</span>; <span class="math inline">\(S\)</span> and <span class="math inline">\(X\)</span> do not move and <span class="math inline">\(M^K=0\)</span>, so the mass restrictions hold; and the goods constraint holds by the definition of <span class="math inline">\(C_t\)</span>.</p>
+</div>
+<p><em>Proof of the last sentence of Proposition 13.</em> Take the economy above. Choose <span class="math inline">\(n\in\left(0,S_0\right]\)</span>, an integer <span class="math inline">\(T_0\)</span> with <span class="math inline">\(\left(1-\mu\right)^{T_0}\left(\mathcal W_0+n\right)&lt;\tfrac12\mathcal W_0\)</span>, then <span class="math inline">\(K_0&gt;\left(1-\delta\right)^{-T_0-1}\left(\hat x+T_0+1\right)\mu\left(\mathcal W_0+n\right)\)</span>, and last <span class="math inline">\(A_0\)</span> large enough for the three inequalities named below, none of whose other terms involves <span class="math inline">\(A_0\)</span>.</p>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span><em>Path 1, the taxed path,</em> is Lemma K’s continuation from date 0, with <span class="math inline">\(w=\mathcal W_0\)</span> and <span class="math inline">\(K_0&gt;\hat x\mu\mathcal W_0\)</span> by the choice of <span class="math inline">\(K_0\)</span>; (K) for it is the first inequality. It never extracts, has <span class="math inline">\(\ell^1_t=\mu e^{-\hat x_t}\)</span> at every date, and retains <span class="math inline">\(\mathcal M^1_\infty\ge\tfrac12\mathcal W_0\)</span>.</p>
+<p><em>Path 0, the untaxed path,</em> extracts <span class="math inline">\(N^0_0=n\)</span> at date 0 and treats nothing: <span class="math inline">\(D^0_0=0\)</span>, <span class="math inline">\(\varpi^0_0=0\)</span>, <span class="math inline">\(K^{R,0}_0=0\)</span>, <span class="math inline">\(G^0_0=0\)</span>, so <span class="math inline">\(K^0_1=\left(1-\delta\right)K_0\)</span>, and, <span class="math inline">\(C^D\)</span> and <span class="math inline">\(C^W\)</span> being zero, <span class="math inline">\(C^0_0=Y^0_0-C^N\left(n,S_0,0\right)\)</span> with <span class="math inline">\(Y^0_0=A_0e^{-\kappa P_0}K_0^{\beta_K}n^{\gamma}\)</span>, nonnegative under the second inequality, <span class="math inline">\(A_0e^{-\kappa P_0}K_0^{\beta_K}n^{\gamma}\ge C^N\left(n,S_0,0\right)\)</span>. Then <span class="math inline">\(\mathcal D^0_0\ge\omega^YY^0_0&gt;0\)</span> and <span class="math inline">\(\Omega^0_0=n/\mathcal D^0_0\)</span>; <span class="math inline">\(S^0_1=S_0-n\ge0\)</span>; the ledger gives <span class="math inline">\(W^0_0=n\)</span>, and <span class="math inline">\(\mathcal W^0_1=\left(1-\mu\right)\mathcal W_0+n\)</span>. At the dates <span class="math inline">\(1\le t\le T_0\)</span> the path is idle: it extracts, discovers and treats nothing, so <span class="math inline">\(R^0_t=0\)</span>, output, every cost flow, <span class="math inline">\(\mathcal D^0_t\)</span>, consumption and gross investment are zero, <span class="math inline">\(\Omega^0_t=0\)</span>, <span class="math inline">\(K^0_{t+1}=\left(1-\delta\right)K^0_t\)</span> and <span class="math inline">\(\mathcal W^0_{t+1}=\left(1-\mu\right)\mathcal W^0_t\)</span>, and every constraint holds. From <span class="math inline">\(T_0+1\)</span> on it is Lemma K’s continuation from <span class="math inline">\(w^0\equiv\mathcal W^0_{T_0+1}=\left(1-\mu\right)^{T_0}\left[\left(1-\mu\right)\mathcal W_0+n\right]\)</span>, with <span class="math inline">\(K^0_{T_0+1}=\left(1-\delta\right)^{T_0+1}K_0&gt;\hat x_{T_0+1}\mu w^0\)</span> by the choice of <span class="math inline">\(K_0\)</span>, <span class="math inline">\(M^K_{T_0+1}=0\)</span>, <span class="math inline">\(S^0_{T_0+1}=S_0-n\ge0\)</span>, <span class="math inline">\(X^0_{T_0+1}=X_0\)</span> and <span class="math inline">\(P^0_{T_0+1}\ge0\)</span>, pollution staying nonnegative from <span class="math inline">\(P_0\ge0\)</span> as <span class="math inline">\(\Xi\ge0\)</span> and <span class="math inline">\(\theta&lt;1\)</span>. (K) for it is the third inequality, in which <span class="math inline">\(P^0_{T_0+1}\)</span> is fixed by the material choices before <span class="math inline">\(T_0+1\)</span>.</p>
+<p>Both paths are feasible from the same initial stocks, with <span class="math inline">\(G\ge0\)</span> at every date. (P1): <span class="math inline">\(N^0_0=n&gt;0=N^1_0\)</span>, and neither path extracts later. (P2): <span class="math inline">\(\ell^0_t=\mu&gt;\ell^1_t\)</span> at <span class="math inline">\(t\le T_0\)</span>, where path 0 treats nothing, and <span class="math inline">\(\ell^0_t=\mu e^{-\hat x_t}=\ell^1_t\)</span> after. (P3): <span class="math inline">\(\phi^I=0\)</span>. Yet, by Lemma K and the choice of <span class="math inline">\(T_0\)</span>, <span class="math display">\[
+\mathcal M^0_\infty\;\le\;w^0\;&lt;\;\left(1-\mu\right)^{T_0}\left(\mathcal W_0+n\right)\;&lt;\;\tfrac12\mathcal W_0\;\le\;\mathcal M^1_\infty .
+\]</span> The untaxed path retains less although its direct term is positive. The definition of Lemma M(b) gives <span class="math inline">\(\varrho_{t,\bar t}=\mathbf Q_t^\top\varrho_{t+1,\bar t}\)</span>, whose second entry at <span class="math inline">\(\sigma\equiv0\)</span> is <span class="math inline">\(\left(1-\ell_t\right)\varrho^{\mathcal W}_{t+1,\bar t}\)</span>; with <span class="math inline">\(\mathbf b_s=\left(0,1\right)^\top\)</span> this gives <span class="math inline">\(\varrho^{N,0}_0=\prod_{t\ge1}\left(1-\ell^0_t\right)=\left(1-\mu\right)^{T_0}\prod_{t&gt;T_0}\left(1-\ell^0_t\right)\ge\tfrac12\left(1-\mu\right)^{T_0}\)</span>, by the bound on <span class="math inline">\(\sum_{t&gt;T_0}\ell^0_t\)</span> in the proof of Lemma K. So the direct term is <span class="math inline">\(n\varrho^{N,0}_0&gt;0\)</span>: path 0 keeps part of what it extracts, but its idle dates lose the initial stock that path 1 keeps.</p>
+</div>
+<p><em>The hard ceiling.</em> Under the hard ceiling the proposition is empty, every retention probability being zero. If <span class="math inline">\(\bar a&lt;1\)</span>, then <span class="math inline">\(\ell_t\ge\underline\ell\equiv\mu\left(1-\bar a\right)&gt;0\)</span> at every date, as <span class="math inline">\(a_t\varpi_t\le a_t&lt;\bar a\)</span> where a flow is treated and <span class="math inline">\(a_t\varpi_t=0\)</span> where none is. Multiplying out, <span class="math display">\[
+\mathbf 1^\top\mathbf Q_{t+1}\mathbf Q_t=\Big(1-\delta\ell_{t+1},\ \ 1-\ell_t-\ell_{t+1}\left[1-\mu+\left(1-\sigma_t\right)\left(\mu-\ell_t\right)\right]\Big)\;\le\;\left(1-\delta\underline\ell\right)\mathbf 1^\top ,
+\]</span> the bracket being nonnegative, and since every <span class="math inline">\(\mathbf Q_t\)</span> is nonnegative with <span class="math inline">\(\mathbf 1^\top\mathbf Q_t\le\mathbf 1^\top\)</span>, taking the factors of <span class="math inline">\(\varrho_{t,\bar t}^\top\)</span> two at a time gives <span class="math inline">\(\varrho_{t,\bar t}\le\left(1-\delta\underline\ell\right)^{\lfloor\left(\bar t-t\right)/2\rfloor}\mathbf 1\to0\)</span>. So <span class="math inline">\(\varrho_t=0\)</span> at every date, both terms of (D) vanish, and <span class="math inline">\(\mathcal M_\infty=0\)</span> on every feasible path with nonnegative gross investment.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+/* The figures embedded in a page: each is the explorer (explorer/web/) in an iframe. The page
+ * tells it the theme, at load and on every toggle, and it tells the page its height. Only a
+ * number and two words cross; nothing else is accepted. */
+(function () {
+  "use strict";
+  var frames = [];
+  function theme() { return document.body.classList.contains("quarto-dark") ? "dark" : "light"; }
+  function send(f) { if (f.contentWindow) f.contentWindow.postMessage({ oxTheme: theme() }, "*"); }
+  function start() {
+    frames = Array.prototype.slice.call(document.querySelectorAll("iframe.ox-frame[data-src]"));
+    frames.forEach(function (f) {
+      var src = f.getAttribute("data-src");
+      f.addEventListener("load", function () { send(f); });
+      f.src = src + (src.indexOf("?") >= 0 ? "&" : "?") + "theme=" + theme();
+    });
+    if (frames.length) {
+      new MutationObserver(function () { frames.forEach(send); })
+        .observe(document.body, { attributes: true, attributeFilter: ["class"] });
+    }
+  }
+  window.addEventListener("message", function (e) {
+    var h = e.data && typeof e.data === "object" ? e.data.oxHeight : null;
+    if (typeof h !== "number" || !isFinite(h) || h <= 0 || h > 20000) return;
+    frames.forEach(function (f) { if (f.contentWindow === e.source) f.style.height = Math.ceil(h) + "px"; });
+  });
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./prop_markets_decentralisation.html" class="pagination-link" aria-label="O.9 The planner's allocation as a competitive equilibrium">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">O.9 The planner’s allocation as a competitive equilibrium</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./thm_markets_survival.html" class="pagination-link" aria-label="O.11 A laissez-faire collapse where the planner survives">
+        <span class="nav-page-text"><span class="chapter-title">O.11 A laissez-faire collapse where the planner survives</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
